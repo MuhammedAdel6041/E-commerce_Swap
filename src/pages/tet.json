@@ -1,0 +1,1261 @@
+[
+  {
+    "_id": "675c3e7a685dda6d964909c4",
+    "name": "Ahmed Abd Al-Muti",
+    "slug": "ahmed-abd-al-muti",
+    "description": "magus for every one ljljaldkalkajdlkasjlasjljlajlasjlas",
+    "quantity": 2500,
+    "sold": 1200,
+    "price": 18200,
+    "priceAfterDiscount": 250,
+    "color": ["red,green"],
+    "imagecover": "https://res.cloudinary.com/dvtoucizl/image/upload/v1734098551/products/product-4dbe6427-49fc-4e7d-8bfb-0aad2ea4595d-1734098551409-cover.jpeg.jpg",
+    "image": [
+      "https://res.cloudinary.com/dvtoucizl/image/upload/v1734098553/products/product-936b48b0-a6f2-47bf-b938-eaa391d441d0-1734098553138-1.jpeg.jpg"
+    ],
+    "category": {
+      "name": "Mugs"
+    },
+    "subcategory": [],
+    "wishlistflag": false,
+    "ratingsQuantity": 0,
+    "createdAt": "2024-12-13T14:02:34.925Z",
+    "updatedAt": "2024-12-13T14:02:34.925Z",
+    "id": "675c3e7a685dda6d964909c4"
+  },
+  {
+    "_id": "675c3ad7685dda6d96490978",
+    "name": "sv,scvsnskvnlsms",
+    "slug": "svscvsnskvnlsms",
+    "description": "flksfkfljsljldskjlsdjlkdsjflksj",
+    "quantity": 150000,
+    "sold": 205,
+    "price": 1105,
+    "priceAfterDiscount": 50,
+    "color": ["green"],
+    "imagecover": "https://res.cloudinary.com/dvtoucizl/image/upload/v1734097619/products/product-a28dda2f-ee2a-4b62-99a6-7bb092cb0618-1734097618930-cover.jpeg.jpg",
+    "image": [
+      "https://res.cloudinary.com/dvtoucizl/image/upload/v1734097621/products/product-919a4175-e0ac-4103-a5c9-c62a5a861b37-1734097621061-1.jpeg.jpg"
+    ],
+    "category": {
+      "name": "Mugs"
+    },
+    "subcategory": [],
+    "wishlistflag": false,
+    "ratingsQuantity": 0,
+    "createdAt": "2024-12-13T13:47:03.161Z",
+    "updatedAt": "2024-12-13T13:47:03.161Z",
+    "id": "675c3ad7685dda6d96490978"
+  },
+  {
+    "_id": "675c3971685dda6d9649096f",
+    "name": "aaaaaaaaaaa",
+    "slug": "aaaaaaaaaaa",
+    "description": "an,man,manmansdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "quantity": 200,
+    "sold": 500,
+    "price": 1500,
+    "priceAfterDiscount": 150,
+    "color": ["green"],
+    "imagecover": "https://res.cloudinary.com/dvtoucizl/image/upload/v1734097263/products/product-574e8d84-bed1-4502-8ac4-7922c4a589a3-1734097262111-cover.jpeg.jpg",
+    "image": [
+      "https://res.cloudinary.com/dvtoucizl/image/upload/v1734097264/products/product-aa2dc414-6e42-49f0-8902-cacd705c11a2-1734097264005-1.jpeg.jpg"
+    ],
+    "category": {
+      "name": "Kids"
+    },
+    "subcategory": [],
+    "wishlistflag": false,
+    "ratingsQuantity": 0,
+    "createdAt": "2024-12-13T13:41:05.975Z",
+    "updatedAt": "2024-12-13T13:41:05.975Z",
+    "id": "675c3971685dda6d9649096f"
+  },
+  {
+    "_id": "6660c0c283c6e0c1bbfff44a",
+    "name": "Loreal Infallible 24H Fresh Wear Foundation",
+    "slug": "loreal-infallible-24h-fresh-wear-foundation",
+    "description": "Handmade loreal infallible 24h fresh wear foundation",
+    "quantity": 46,
+    "sold": 1,
+    "price": 270,
+    "priceAfterDiscount": 0,
+    "color": [],
+    "imagecover": "https://res.cloudinary.com/dvtoucizl/image/upload/v1717616833/products/product-4ccabdf0-a2b3-4750-96a8-0251e2af5069-1717616832862-cover.jpeg.jpg",
+    "image": [
+      "https://res.cloudinary.com/dvtoucizl/image/upload/v1717616833/products/product-ec8fe150-0a7b-4968-8853-a9ae54e1cead-1717616833720-1.jpeg.jpg"
+    ],
+    "category": {
+      "name": "Make-Up"
+    },
+    "subcategory": [],
+    "brand": "665f650b34b8c833d473f955",
+    "wishlistflag": false,
+    "ratingsQuantity": 0,
+    "createdAt": "2024-06-05T19:47:14.876Z",
+    "updatedAt": "2024-11-28T04:39:53.489Z",
+    "id": "6660c0c283c6e0c1bbfff44a"
+  },
+  {
+    "_id": "6660c05583c6e0c1bbfff43e",
+    "name": "Thing Liquid Lipcolour",
+    "slug": "thing-liquid-lipcolour",
+    "description": "Handmade thing liquid lipcolour",
+    "quantity": 20,
+    "sold": 4,
+    "price": 269,
+    "priceAfterDiscount": 0,
+    "color": [],
+    "imagecover": "https://res.cloudinary.com/dvtoucizl/image/upload/v1717616723/products/product-974e87db-2fe7-4a91-9561-21a7103bef6e-1717616723007-cover.jpeg.jpg",
+    "image": [
+      "https://res.cloudinary.com/dvtoucizl/image/upload/v1717616724/products/product-7cf11daa-c279-4751-ad92-d00d7e52ed90-1717616724269-1.jpeg.jpg"
+    ],
+    "category": {
+      "name": "Make-Up"
+    },
+    "subcategory": [],
+    "brand": "665f650b34b8c833d473f955",
+    "wishlistflag": false,
+    "ratingsQuantity": 4,
+    "createdAt": "2024-06-05T19:45:25.272Z",
+    "updatedAt": "2024-11-30T12:47:48.273Z",
+    "ratingsAverage": 3.75,
+    "id": "6660c05583c6e0c1bbfff43e"
+  },
+  {
+    "_id": "6660bff783c6e0c1bbfff432",
+    "name": "Handmade lipgloss",
+    "slug": "handmade-lipgloss",
+    "description": "Cute handmade lipgloss",
+    "quantity": 48,
+    "sold": 2,
+    "price": 210,
+    "priceAfterDiscount": 0,
+    "color": [],
+    "imagecover": "https://res.cloudinary.com/dvtoucizl/image/upload/v1717616629/products/product-bb2d7dc7-c267-4ad3-bdae-e708e92e4466-1717616629223-cover.jpeg.jpg",
+    "image": [
+      "https://res.cloudinary.com/dvtoucizl/image/upload/v1717616630/products/product-f3f62eab-a928-4068-b971-569f3c8a8938-1717616630528-1.jpeg.jpg"
+    ],
+    "category": {
+      "name": "Make-Up"
+    },
+    "subcategory": [],
+    "brand": "665f650b34b8c833d473f955",
+    "wishlistflag": false,
+    "ratingsQuantity": 1,
+    "createdAt": "2024-06-05T19:43:51.886Z",
+    "updatedAt": "2024-11-30T12:47:48.273Z",
+    "ratingsAverage": 3,
+    "id": "6660bff783c6e0c1bbfff432"
+  },
+  {
+    "_id": "6660be3283c6e0c1bbfff426",
+    "name": "Cyo Crush On Blush Powder Blush",
+    "slug": "cyo-crush-on-blush-powder-blush",
+    "description": "Handmade cyo Crush On Blush Powder Blush\t",
+    "quantity": 22,
+    "sold": 2,
+    "price": 242,
+    "priceAfterDiscount": 0,
+    "color": [],
+    "imagecover": "https://res.cloudinary.com/dvtoucizl/image/upload/v1717616176/products/product-a2940ac1-5a8b-4231-8463-c9d56ccc3d1d-1717616176523-cover.jpeg.jpg",
+    "image": [
+      "https://res.cloudinary.com/dvtoucizl/image/upload/v1717616177/products/product-3d2aaa5e-18f9-45e3-877b-e77a029788a7-1717616177361-1.jpeg.jpg"
+    ],
+    "category": {
+      "name": "Make-Up"
+    },
+    "subcategory": [],
+    "brand": "665f650b34b8c833d473f955",
+    "wishlistflag": false,
+    "ratingsQuantity": 0,
+    "createdAt": "2024-06-05T19:36:18.368Z",
+    "updatedAt": "2024-11-30T12:47:48.273Z",
+    "id": "6660be3283c6e0c1bbfff426"
+  },
+  {
+    "_id": "6660bce583c6e0c1bbfff40b",
+    "name": "crochet knitted Flower Bag",
+    "slug": "crochet-knitted-flower-bag",
+    "description": "Handmade crochet knitted flower bag",
+    "quantity": 34,
+    "sold": 0,
+    "price": 212,
+    "priceAfterDiscount": 0,
+    "color": [],
+    "imagecover": "https://res.cloudinary.com/dvtoucizl/image/upload/v1717615843/products/product-2b556692-c8c7-4c91-b407-bb2f1de43611-1717615842660-cover.jpeg.jpg",
+    "image": [
+      "https://res.cloudinary.com/dvtoucizl/image/upload/v1717615843/products/product-94f59f5b-eb25-4961-8d2f-ab34333b1c80-1717615843643-1.jpeg.jpg"
+    ],
+    "category": {
+      "name": "Bags"
+    },
+    "subcategory": [],
+    "brand": "665f656e34b8c833d473f961",
+    "wishlistflag": true,
+    "ratingsQuantity": 0,
+    "createdAt": "2024-06-05T19:30:45.129Z",
+    "updatedAt": "2024-11-27T19:39:29.812Z",
+    "id": "6660bce583c6e0c1bbfff40b"
+  },
+  {
+    "_id": "6660bc5e83c6e0c1bbfff3ff",
+    "name": "ToteHandbag",
+    "slug": "totehandbag",
+    "description": "Cute handmade tote hand bag",
+    "quantity": 43,
+    "sold": 0,
+    "price": 242,
+    "priceAfterDiscount": 0,
+    "color": [],
+    "imagecover": "https://res.cloudinary.com/dvtoucizl/image/upload/v1717615708/products/product-017fcb15-85d6-4db1-8f2b-4adcf0656432-1717615708009-cover.jpeg.jpg",
+    "image": [
+      "https://res.cloudinary.com/dvtoucizl/image/upload/v1717615709/products/product-e877968b-c8bb-488d-9f01-354ccf7eeae1-1717615709074-1.jpeg.jpg"
+    ],
+    "category": {
+      "name": "Bags"
+    },
+    "subcategory": [],
+    "brand": "665f656e34b8c833d473f961",
+    "wishlistflag": true,
+    "ratingsQuantity": 0,
+    "createdAt": "2024-06-05T19:28:30.158Z",
+    "updatedAt": "2024-11-27T19:39:28.621Z",
+    "id": "6660bc5e83c6e0c1bbfff3ff"
+  },
+  {
+    "_id": "6660bbae83c6e0c1bbfff3f3",
+    "name": "ToteHandbags",
+    "slug": "totehandbags",
+    "description": "Handmade tote hand bags",
+    "quantity": 11,
+    "sold": 0,
+    "price": 297,
+    "priceAfterDiscount": 0,
+    "color": [],
+    "imagecover": "https://res.cloudinary.com/dvtoucizl/image/upload/v1717615532/products/product-d51bfdd0-2070-4a02-b684-5970627be843-1717615532318-cover.jpeg.jpg",
+    "image": [
+      "https://res.cloudinary.com/dvtoucizl/image/upload/v1717615533/products/product-5aeee9e5-9b15-493c-a865-9aa164733f29-1717615533380-1.jpeg.jpg"
+    ],
+    "category": {
+      "name": "Bags"
+    },
+    "subcategory": [],
+    "brand": "665f656e34b8c833d473f961",
+    "wishlistflag": true,
+    "ratingsQuantity": 0,
+    "createdAt": "2024-06-05T19:25:34.301Z",
+    "updatedAt": "2024-11-27T19:39:25.631Z",
+    "id": "6660bbae83c6e0c1bbfff3f3"
+  },
+  {
+    "_id": "6660bb3883c6e0c1bbfff3e7",
+    "name": "White knitted bag",
+    "slug": "white-knitted-bag",
+    "description": "White knitted handmade bag",
+    "quantity": 31,
+    "sold": 1,
+    "price": 219,
+    "priceAfterDiscount": 0,
+    "color": [],
+    "imagecover": "https://res.cloudinary.com/dvtoucizl/image/upload/v1717615415/products/product-2cdbb0a9-0e0e-4ec0-a3cf-eb534a111db1-1717615414843-cover.jpeg.jpg",
+    "image": [
+      "https://res.cloudinary.com/dvtoucizl/image/upload/v1717615416/products/product-4d2a2969-58c4-4edb-98eb-46aa9a83ef4d-1717615415807-1.jpeg.jpg"
+    ],
+    "category": {
+      "name": "Bags"
+    },
+    "subcategory": [],
+    "brand": "665f656e34b8c833d473f961",
+    "wishlistflag": true,
+    "ratingsQuantity": 0,
+    "createdAt": "2024-06-05T19:23:36.811Z",
+    "updatedAt": "2024-06-07T16:34:21.620Z",
+    "id": "6660bb3883c6e0c1bbfff3e7"
+  },
+  {
+    "_id": "6660bae383c6e0c1bbfff3db",
+    "name": "Knitted bag",
+    "slug": "knitted-bag",
+    "description": "Green knitted handmade bag",
+    "quantity": 31,
+    "sold": 0,
+    "price": 252,
+    "priceAfterDiscount": 0,
+    "color": [],
+    "imagecover": "https://res.cloudinary.com/dvtoucizl/image/upload/v1717615329/products/product-188bcc11-a1da-4f51-93e1-d5fffad0f7af-1717615329249-cover.jpeg.jpg",
+    "image": [
+      "https://res.cloudinary.com/dvtoucizl/image/upload/v1717615330/products/product-9c3f4e03-0919-49c2-8233-e47ced8a2c3e-1717615330244-1.jpeg.jpg"
+    ],
+    "category": {
+      "name": "Bags"
+    },
+    "subcategory": [],
+    "brand": "665f656e34b8c833d473f961",
+    "wishlistflag": true,
+    "ratingsQuantity": 0,
+    "createdAt": "2024-06-05T19:22:11.409Z",
+    "updatedAt": "2024-11-27T19:39:22.156Z",
+    "id": "6660bae383c6e0c1bbfff3db"
+  },
+  {
+    "_id": "6660b9dc83c6e0c1bbfff3cf",
+    "name": "Handmade Bag",
+    "slug": "handmade-bag",
+    "description": "Blue cute handmade bag",
+    "quantity": 1,
+    "sold": 0,
+    "price": 255,
+    "priceAfterDiscount": 0,
+    "color": [],
+    "imagecover": "https://res.cloudinary.com/dvtoucizl/image/upload/v1717615067/products/product-17efd75d-cccc-4266-9953-8df8d142ba33-1717615066512-cover.jpeg.jpg",
+    "image": [
+      "https://res.cloudinary.com/dvtoucizl/image/upload/v1717615067/products/product-66618183-7e16-4048-a7eb-9c7d5a3443fb-1717615067672-1.jpeg.jpg"
+    ],
+    "category": {
+      "name": "Bags"
+    },
+    "subcategory": [],
+    "brand": "665f656e34b8c833d473f961",
+    "wishlistflag": true,
+    "ratingsQuantity": 0,
+    "createdAt": "2024-06-05T19:17:48.723Z",
+    "updatedAt": "2024-06-07T16:03:05.462Z",
+    "id": "6660b9dc83c6e0c1bbfff3cf"
+  },
+  {
+    "_id": "6660b72983c6e0c1bbfff3b7",
+    "name": "Grey Bad\tBags",
+    "slug": "grey-bad-bags",
+    "description": "Grey handmade bad bags",
+    "quantity": 38,
+    "sold": 0,
+    "price": 286,
+    "priceAfterDiscount": 0,
+    "color": [],
+    "imagecover": "https://res.cloudinary.com/dvtoucizl/image/upload/v1717614376/products/product-10ea47d0-9cf5-4689-b8fe-bf6c5482892e-1717614375649-cover.jpeg.jpg",
+    "image": [
+      "https://res.cloudinary.com/dvtoucizl/image/upload/v1717614376/products/product-68de4955-afbb-48db-9215-1f46adf646f1-1717614376641-1.jpeg.jpg"
+    ],
+    "category": {
+      "name": "Bags"
+    },
+    "subcategory": [],
+    "brand": "665f656e34b8c833d473f961",
+    "wishlistflag": true,
+    "ratingsQuantity": 0,
+    "createdAt": "2024-06-05T19:06:17.572Z",
+    "updatedAt": "2024-06-07T16:03:08.287Z",
+    "id": "6660b72983c6e0c1bbfff3b7"
+  },
+  {
+    "_id": "66605b732032bb77c0b378db",
+    "name": "Simple kid dress",
+    "slug": "simple-kid-dress",
+    "description": "The cotton blend is lightweight and stretchy, making it comfortable to wear all day long",
+    "quantity": 22,
+    "sold": 1,
+    "price": 269,
+    "priceAfterDiscount": 0,
+    "color": [],
+    "imagecover": "https://res.cloudinary.com/dvtoucizl/image/upload/v1717590896/products/product-fd698a99-9b6b-4d21-abb7-06538097bc67-1717590895841-cover.jpeg.jpg",
+    "image": [
+      "https://res.cloudinary.com/dvtoucizl/image/upload/v1717590897/products/product-28431a52-d500-41eb-b25d-51600e37e234-1717590897138-1.jpeg.jpg"
+    ],
+    "category": {
+      "name": "Kids"
+    },
+    "subcategory": [],
+    "brand": "665f661534b8c833d473f96d",
+    "wishlistflag": true,
+    "ratingsQuantity": 1,
+    "createdAt": "2024-06-05T12:34:59.661Z",
+    "updatedAt": "2024-06-07T15:54:01.764Z",
+    "ratingsAverage": 2,
+    "id": "66605b732032bb77c0b378db"
+  },
+  {
+    "_id": "66605b192032bb77c0b378cb",
+    "name": "Kid gentle dress",
+    "slug": "kid-gentle-dress",
+    "description": "The cotton blend is lightweight and stretchy, making it comfortable to wear all day long",
+    "quantity": 4,
+    "sold": 1,
+    "price": 285,
+    "priceAfterDiscount": 0,
+    "color": [],
+    "imagecover": "https://res.cloudinary.com/dvtoucizl/image/upload/v1717590807/products/product-22d870e3-4cbc-4c56-96fc-1c0161357492-1717590807363-cover.jpeg.jpg",
+    "image": [
+      "https://res.cloudinary.com/dvtoucizl/image/upload/v1717590808/products/product-2fc3a8f4-0d4b-41f9-93da-57d5a1edb000-1717590808410-1.jpeg.jpg"
+    ],
+    "category": {
+      "name": "Kids"
+    },
+    "subcategory": [],
+    "brand": "665f661534b8c833d473f96d",
+    "wishlistflag": true,
+    "ratingsQuantity": 0,
+    "createdAt": "2024-06-05T12:33:29.449Z",
+    "updatedAt": "2024-06-07T15:53:13.321Z",
+    "id": "66605b192032bb77c0b378cb"
+  },
+  {
+    "_id": "66605add2032bb77c0b378bf",
+    "name": "Cherry style dress",
+    "slug": "cherry-style-dress",
+    "description": "The cotton blend is lightweight and stretchy, making it comfortable to wear all day long",
+    "quantity": 38,
+    "sold": 1,
+    "price": 236,
+    "priceAfterDiscount": 0,
+    "color": [],
+    "imagecover": "https://res.cloudinary.com/dvtoucizl/image/upload/v1717590748/products/product-6a220c4f-2681-472e-8f33-5ef72625078a-1717590747519-cover.jpeg.jpg",
+    "image": [
+      "https://res.cloudinary.com/dvtoucizl/image/upload/v1717590748/products/product-e00752f3-5297-46e5-b13e-5c53771802c2-1717590748783-1.jpeg.jpg"
+    ],
+    "category": {
+      "name": "Kids"
+    },
+    "subcategory": [],
+    "brand": "665f661534b8c833d473f96d",
+    "wishlistflag": false,
+    "ratingsQuantity": 0,
+    "createdAt": "2024-06-05T12:32:29.722Z",
+    "updatedAt": "2024-06-07T15:53:17.136Z",
+    "id": "66605add2032bb77c0b378bf"
+  },
+  {
+    "_id": "66605aa92032bb77c0b378b3",
+    "name": "Elegance white dress",
+    "slug": "elegance-white-dress",
+    "description": "The cotton blend is lightweight and stretchy, making it comfortable to wear all day long",
+    "quantity": 26,
+    "sold": 0,
+    "price": 258,
+    "priceAfterDiscount": 0,
+    "color": [],
+    "imagecover": "https://res.cloudinary.com/dvtoucizl/image/upload/v1717590696/products/product-f10faa5c-04b1-4389-ad71-858d6668f9da-1717590695843-cover.jpeg.jpg",
+    "image": [
+      "https://res.cloudinary.com/dvtoucizl/image/upload/v1717590697/products/product-c12c456a-728c-4233-a02e-3dcfb4cd051e-1717590696806-1.jpeg.jpg"
+    ],
+    "category": {
+      "name": "Kids"
+    },
+    "subcategory": [],
+    "brand": "665f661534b8c833d473f96d",
+    "wishlistflag": false,
+    "ratingsQuantity": 1,
+    "createdAt": "2024-06-05T12:31:37.834Z",
+    "updatedAt": "2024-06-07T15:53:18.943Z",
+    "ratingsAverage": 4,
+    "id": "66605aa92032bb77c0b378b3"
+  },
+  {
+    "_id": "66605a7a2032bb77c0b378a7",
+    "name": "Pinky summer dress",
+    "slug": "pinky-summer-dress",
+    "description": "The cotton blend is lightweight and stretchy, making it comfortable to wear all day long",
+    "quantity": 34,
+    "sold": 0,
+    "price": 283,
+    "priceAfterDiscount": 0,
+    "color": [],
+    "imagecover": "https://res.cloudinary.com/dvtoucizl/image/upload/v1717590648/products/product-105dd5f0-4dc7-4472-91c0-6224cbd8e651-1717590648182-cover.jpeg.jpg",
+    "image": [
+      "https://res.cloudinary.com/dvtoucizl/image/upload/v1717590649/products/product-4728cf60-d8c0-4882-9e5e-e8a85568d8f6-1717590648991-1.jpeg.jpg"
+    ],
+    "category": {
+      "name": "Kids"
+    },
+    "subcategory": [],
+    "brand": "665f661534b8c833d473f96d",
+    "wishlistflag": false,
+    "ratingsQuantity": 0,
+    "createdAt": "2024-06-05T12:30:50.322Z",
+    "updatedAt": "2024-06-05T12:30:50.322Z",
+    "id": "66605a7a2032bb77c0b378a7"
+  },
+  {
+    "_id": "66605a3c2032bb77c0b3789b",
+    "name": "Casual dress",
+    "slug": "casual-dress",
+    "description": "The cotton blend is lightweight and stretchy, making it comfortable to wear all day long",
+    "quantity": 3,
+    "sold": 1,
+    "price": 223,
+    "priceAfterDiscount": 0,
+    "color": [],
+    "imagecover": "https://res.cloudinary.com/dvtoucizl/image/upload/v1717590586/products/product-3fe9c653-0eea-4044-8f4b-39898ddbf2d3-1717590585749-cover.jpeg.jpg",
+    "image": [
+      "https://res.cloudinary.com/dvtoucizl/image/upload/v1717590587/products/product-6f6be7b7-8825-4af0-8213-8a97c85fed0f-1717590587196-1.jpeg.jpg"
+    ],
+    "category": {
+      "name": "Kids"
+    },
+    "subcategory": [],
+    "brand": "665f661534b8c833d473f96d",
+    "wishlistflag": false,
+    "ratingsQuantity": 1,
+    "createdAt": "2024-06-05T12:29:48.136Z",
+    "updatedAt": "2024-06-07T15:54:29.153Z",
+    "ratingsAverage": 4,
+    "id": "66605a3c2032bb77c0b3789b"
+  },
+  {
+    "_id": "666059f52032bb77c0b3788f",
+    "name": "Purple unique dress",
+    "slug": "purple-unique-dress",
+    "description": "The cotton blend is lightweight and stretchy, making it comfortable to wear all day long",
+    "quantity": 31,
+    "sold": 2,
+    "price": 275,
+    "priceAfterDiscount": 0,
+    "color": [],
+    "imagecover": "https://res.cloudinary.com/dvtoucizl/image/upload/v1717590515/products/product-be616cdb-0878-40d0-bab6-9f792f6f91d7-1717590514897-cover.jpeg.jpg",
+    "image": [
+      "https://res.cloudinary.com/dvtoucizl/image/upload/v1717590516/products/product-4cab91d4-3f6d-4ae2-8113-e9d8308de397-1717590516498-1.jpeg.jpg"
+    ],
+    "category": {
+      "name": "Kids"
+    },
+    "subcategory": [],
+    "brand": "665f661534b8c833d473f96d",
+    "wishlistflag": false,
+    "ratingsQuantity": 1,
+    "createdAt": "2024-06-05T12:28:37.630Z",
+    "updatedAt": "2024-06-07T16:57:24.107Z",
+    "ratingsAverage": 4,
+    "id": "666059f52032bb77c0b3788f"
+  },
+  {
+    "_id": "666056e32032bb77c0b37854",
+    "name": "Natural Candles",
+    "slug": "natural-candles",
+    "description": "How to Make Homemade Natural Candles (a fun project & gift idea!) ",
+    "quantity": 18,
+    "sold": 1,
+    "price": 221,
+    "priceAfterDiscount": 0,
+    "color": [],
+    "imagecover": "https://res.cloudinary.com/dvtoucizl/image/upload/v1717589728/products/product-afceeefa-55ae-47b0-b3e2-cbbe61f6335e-1717589728027-cover.jpeg.webp",
+    "image": [
+      "https://res.cloudinary.com/dvtoucizl/image/upload/v1717589730/products/product-2fbd17ea-cccb-447d-9d9b-f61a54b6ed43-1717589729702-1.jpeg.webp"
+    ],
+    "category": {
+      "name": "Candle"
+    },
+    "subcategory": [],
+    "brand": "665f654634b8c833d473f95b",
+    "wishlistflag": false,
+    "ratingsQuantity": 0,
+    "createdAt": "2024-06-05T12:15:31.237Z",
+    "updatedAt": "2024-11-28T04:39:48.447Z",
+    "id": "666056e32032bb77c0b37854"
+  },
+  {
+    "_id": "666056862032bb77c0b37848",
+    "name": "Coconut Candle",
+    "slug": "coconut-candle",
+    "description": "Coconut Candle Designer Pieces Vegan Candles Sustainable Decoration Deco Soy",
+    "quantity": 39,
+    "sold": 1,
+    "price": 256,
+    "priceAfterDiscount": 0,
+    "color": [],
+    "imagecover": "https://res.cloudinary.com/dvtoucizl/image/upload/v1717589636/products/product-61e46acb-1bed-48e3-9796-5475fcbcfdfb-1717589635776-cover.jpeg.avif",
+    "image": [
+      "https://res.cloudinary.com/dvtoucizl/image/upload/v1717589637/products/product-6fd1c6de-1b8b-4a65-95df-9cd4329cad67-1717589636879-1.jpeg.avif"
+    ],
+    "category": {
+      "name": "Candle"
+    },
+    "subcategory": [],
+    "brand": "665f654634b8c833d473f95b",
+    "wishlistflag": false,
+    "ratingsQuantity": 1,
+    "createdAt": "2024-06-05T12:13:58.334Z",
+    "updatedAt": "2024-11-28T04:39:49.393Z",
+    "ratingsAverage": 5,
+    "id": "666056862032bb77c0b37848"
+  },
+  {
+    "_id": "666056222032bb77c0b37838",
+    "name": "Romantic Dried Flower Candle",
+    "slug": "romantic-dried-flower-candle",
+    "description": "Handmade Romantic Dried Flower Pillar Scented Candles Rose Soy Wax Wedding Gifts",
+    "quantity": 18,
+    "sold": 0,
+    "price": 223,
+    "priceAfterDiscount": 0,
+    "color": [],
+    "imagecover": "https://res.cloudinary.com/dvtoucizl/image/upload/v1717589535/products/product-eafaa40b-6b87-44b0-9bb1-7f32b312e8dd-1717589535385-cover.jpeg.webp",
+    "image": [
+      "https://res.cloudinary.com/dvtoucizl/image/upload/v1717589537/products/product-2a1a4fb7-8210-4598-b792-ae13fc3e6a0c-1717589536840-1.jpeg.webp"
+    ],
+    "category": {
+      "name": "Candle"
+    },
+    "subcategory": [],
+    "brand": "665f654634b8c833d473f95b",
+    "wishlistflag": false,
+    "ratingsQuantity": 0,
+    "createdAt": "2024-06-05T12:12:18.220Z",
+    "updatedAt": "2024-11-28T04:39:50.636Z",
+    "id": "666056222032bb77c0b37838"
+  },
+  {
+    "_id": "666055cf2032bb77c0b3782c",
+    "name": "Designer Candles",
+    "slug": "designer-candles",
+    "description": "Handmade Designer Candles Set Of 2",
+    "quantity": 32,
+    "sold": 0,
+    "price": 266,
+    "priceAfterDiscount": 0,
+    "color": [],
+    "imagecover": "https://res.cloudinary.com/dvtoucizl/image/upload/v1717589451/products/product-f0429962-961c-41c5-ba1e-8c432e8b7495-1717589450740-cover.jpeg.png",
+    "image": [
+      "https://res.cloudinary.com/dvtoucizl/image/upload/v1717589453/products/product-09e07427-3c3d-4c61-96e3-ecda319b41b5-1717589453213-1.jpeg.png"
+    ],
+    "category": {
+      "name": "Candle"
+    },
+    "subcategory": [],
+    "brand": "665f654634b8c833d473f95b",
+    "wishlistflag": false,
+    "ratingsQuantity": 0,
+    "createdAt": "2024-06-05T12:10:55.768Z",
+    "updatedAt": "2024-11-28T04:39:49.742Z",
+    "id": "666055cf2032bb77c0b3782c"
+  },
+  {
+    "_id": "666055552032bb77c0b37820",
+    "name": "Soy Wax Cube",
+    "slug": "soy-wax-cube",
+    "description": "Wax Candles 100% Pure Beeswax for Home Decoration, Natural Honeycomb, Handmade Wax",
+    "quantity": 9,
+    "sold": 1,
+    "price": 280,
+    "priceAfterDiscount": 0,
+    "color": [],
+    "imagecover": "https://res.cloudinary.com/dvtoucizl/image/upload/v1717589331/products/product-6af5ad4e-49e9-4adc-a9c6-892d8a29d57c-1717589331294-cover.jpeg.jpg",
+    "image": [
+      "https://res.cloudinary.com/dvtoucizl/image/upload/v1717589332/products/product-64abe155-0f17-4371-9279-599efdebd63e-1717589332297-1.jpeg.jpg"
+    ],
+    "category": {
+      "name": "Candle"
+    },
+    "subcategory": [],
+    "brand": "665f654634b8c833d473f95b",
+    "wishlistflag": false,
+    "ratingsQuantity": 2,
+    "createdAt": "2024-06-05T12:08:53.163Z",
+    "updatedAt": "2024-11-28T04:39:51.080Z",
+    "ratingsAverage": 4,
+    "id": "666055552032bb77c0b37820"
+  },
+  {
+    "_id": "666055102032bb77c0b37814",
+    "name": "Scented Candles",
+    "slug": "scented-candles",
+    "description": "Handmade Real Dried Flowers Scented Candles, Aromatherapy Candles",
+    "quantity": 10,
+    "sold": 1,
+    "price": 201,
+    "priceAfterDiscount": 0,
+    "color": [],
+    "imagecover": "https://res.cloudinary.com/dvtoucizl/image/upload/v1717589263/products/product-398aeed2-4d80-45a2-b199-b363bccd0612-1717589262743-cover.jpeg.jpg",
+    "image": [
+      "https://res.cloudinary.com/dvtoucizl/image/upload/v1717589263/products/product-12dffdfd-4e0b-4951-bf6c-522b4dd4bde0-1717589263731-1.jpeg.jpg"
+    ],
+    "category": {
+      "name": "Candle"
+    },
+    "subcategory": [],
+    "brand": "665f654634b8c833d473f95b",
+    "wishlistflag": true,
+    "ratingsQuantity": 0,
+    "createdAt": "2024-06-05T12:07:44.600Z",
+    "updatedAt": "2024-06-08T16:03:56.196Z",
+    "id": "666055102032bb77c0b37814"
+  },
+  {
+    "_id": "6660548b2032bb77c0b37808",
+    "name": "Craiyon Candles",
+    "slug": "craiyon-candles",
+    "description": "Handmade candles with unique designs and scents on Craiyon",
+    "quantity": 49,
+    "sold": 0,
+    "price": 204,
+    "priceAfterDiscount": 0,
+    "color": [],
+    "imagecover": "https://res.cloudinary.com/dvtoucizl/image/upload/v1717589129/products/product-646c7ce4-d73b-406e-9e91-7fcfbb81b2d2-1717589128972-cover.jpeg.webp",
+    "image": [
+      "https://res.cloudinary.com/dvtoucizl/image/upload/v1717589130/products/product-99cc56a5-62d7-4bb3-a47f-da4471d1314e-1717589130165-1.jpeg.webp"
+    ],
+    "category": {
+      "name": "Candle"
+    },
+    "subcategory": [],
+    "brand": "665f654634b8c833d473f95b",
+    "wishlistflag": true,
+    "ratingsQuantity": 0,
+    "createdAt": "2024-06-05T12:05:31.461Z",
+    "updatedAt": "2024-06-08T16:03:55.165Z",
+    "id": "6660548b2032bb77c0b37808"
+  },
+  {
+    "_id": "666039caa82e00e267170388",
+    "name": "Freckled Carved mug",
+    "slug": "freckled-carved-mug",
+    "description": "Sip in style: artisan-crafted mugs for your everyday moments.",
+    "quantity": 20,
+    "sold": 0,
+    "price": 237,
+    "priceAfterDiscount": 0,
+    "color": [],
+    "imagecover": "https://res.cloudinary.com/dvtoucizl/image/upload/v1717582281/products/product-6ab6294a-a461-408b-b576-5217e9bacbaa-1717582280741-cover.jpeg.jpg",
+    "image": [
+      "https://res.cloudinary.com/dvtoucizl/image/upload/v1717582281/products/product-14771114-d9ac-4fb5-9447-abed73472f85-1717582281606-1.jpeg.jpg"
+    ],
+    "category": {
+      "name": "Mugs"
+    },
+    "subcategory": [],
+    "brand": "665f667a34b8c833d473f973",
+    "wishlistflag": true,
+    "ratingsQuantity": 0,
+    "createdAt": "2024-06-05T10:11:22.695Z",
+    "updatedAt": "2024-06-07T16:31:12.007Z",
+    "id": "666039caa82e00e267170388"
+  },
+  {
+    "_id": "666038c1a82e00e26717036d",
+    "name": "White Mug",
+    "slug": "white-mug",
+    "description": "Embrace every sip with our handcrafted mugs, made just for you.",
+    "quantity": 15,
+    "sold": 0,
+    "price": 231,
+    "priceAfterDiscount": 0,
+    "color": [],
+    "imagecover": "https://res.cloudinary.com/dvtoucizl/image/upload/v1717582014/products/product-72e1142d-35c1-4225-9d44-0c2015183e41-1717582014009-cover.jpeg.jpg",
+    "image": [
+      "https://res.cloudinary.com/dvtoucizl/image/upload/v1717582016/products/product-7b8fefd9-ccf7-49c3-92f3-13e0066cede7-1717582016220-1.jpeg.jpg"
+    ],
+    "category": {
+      "name": "Mugs"
+    },
+    "subcategory": [],
+    "brand": "665f667a34b8c833d473f973",
+    "wishlistflag": true,
+    "ratingsQuantity": 0,
+    "createdAt": "2024-06-05T10:06:57.090Z",
+    "updatedAt": "2024-06-07T16:31:13.331Z",
+    "id": "666038c1a82e00e26717036d"
+  },
+  {
+    "_id": "66603740a82e00e267170348",
+    "name": "Handmade Mug,50ml",
+    "slug": "handmade-mug50ml",
+    "description": "Add a touch of warmth to your day with our artisanal mugs.",
+    "quantity": 25,
+    "sold": 0,
+    "price": 213,
+    "priceAfterDiscount": 0,
+    "color": [],
+    "imagecover": "https://res.cloudinary.com/dvtoucizl/image/upload/v1717581631/products/product-08e5e878-13e2-4c2e-afc9-7aa51561f205-1717581630660-cover.jpeg.jpg",
+    "image": [
+      "https://res.cloudinary.com/dvtoucizl/image/upload/v1717581631/products/product-caee78dd-2d77-4ac5-a3fd-196976c881b3-1717581631783-1.jpeg.jpg"
+    ],
+    "category": {
+      "name": "Mugs"
+    },
+    "subcategory": [],
+    "brand": "665f667a34b8c833d473f973",
+    "wishlistflag": false,
+    "ratingsQuantity": 0,
+    "createdAt": "2024-06-05T10:00:32.902Z",
+    "updatedAt": "2024-06-05T10:00:32.902Z",
+    "id": "66603740a82e00e267170348"
+  },
+  {
+    "_id": "666036e1a82e00e26717033c",
+    "name": "Handmade Mug",
+    "slug": "handmade-mug",
+    "description": "Crafted to hold your favorite moments: our handmade mugs.",
+    "quantity": 12,
+    "sold": 0,
+    "price": 223,
+    "priceAfterDiscount": 0,
+    "color": [],
+    "imagecover": "https://res.cloudinary.com/dvtoucizl/image/upload/v1717581536/products/product-e80f54a1-ac6d-4c23-92c5-248b2259014b-1717581536154-cover.jpeg.jpg",
+    "image": [
+      "https://res.cloudinary.com/dvtoucizl/image/upload/v1717581537/products/product-491d7401-4e7c-4a32-9fce-d189ba3210ff-1717581537037-1.jpeg.jpg"
+    ],
+    "category": {
+      "name": "Mugs"
+    },
+    "subcategory": [],
+    "brand": "665f667a34b8c833d473f973",
+    "wishlistflag": true,
+    "ratingsQuantity": 0,
+    "createdAt": "2024-06-05T09:58:57.851Z",
+    "updatedAt": "2024-06-07T16:31:11.062Z",
+    "id": "666036e1a82e00e26717033c"
+  },
+  {
+    "_id": "66603635a82e00e267170330",
+    "name": "Cute handmade mug",
+    "slug": "cute-handmade-mug",
+    "description": "Start your day right with our handcrafted mugs, designed with love.",
+    "quantity": 15,
+    "sold": 0,
+    "price": 250,
+    "priceAfterDiscount": 0,
+    "color": [],
+    "imagecover": "https://res.cloudinary.com/dvtoucizl/image/upload/v1717581363/products/product-3d447457-809b-4dcd-a853-5fa258fb75b7-1717581363497-cover.jpeg.jpg",
+    "image": [
+      "https://res.cloudinary.com/dvtoucizl/image/upload/v1717581364/products/product-7c8f8072-2a79-40db-a388-b73c9f28906d-1717581364498-1.jpeg.jpg"
+    ],
+    "category": {
+      "name": "Mugs"
+    },
+    "subcategory": [],
+    "brand": "665f667a34b8c833d473f973",
+    "wishlistflag": false,
+    "ratingsQuantity": 0,
+    "createdAt": "2024-06-05T09:56:05.396Z",
+    "updatedAt": "2024-06-05T09:56:05.396Z",
+    "id": "66603635a82e00e267170330"
+  },
+  {
+    "_id": "666035b1a82e00e267170324",
+    "name": "Cute daisy porcelain cappuccino mugs",
+    "slug": "cute-daisy-porcelain-cappuccino-mugs",
+    "description": "Sip in style: artisan-crafted mugs for your everyday moments.",
+    "quantity": 43,
+    "sold": 0,
+    "price": 253,
+    "priceAfterDiscount": 0,
+    "color": [],
+    "imagecover": "https://res.cloudinary.com/dvtoucizl/image/upload/v1717581232/products/product-af8ff359-736c-4a9f-a1e7-0ee44dd7d0b7-1717581231802-cover.jpeg.jpg",
+    "image": [
+      "https://res.cloudinary.com/dvtoucizl/image/upload/v1717581232/products/product-f3c9f0fb-c78c-4251-b8bd-1666366c5da9-1717581232764-1.jpeg.jpg"
+    ],
+    "category": {
+      "name": "Mugs"
+    },
+    "subcategory": [],
+    "brand": "665f667a34b8c833d473f973",
+    "wishlistflag": true,
+    "ratingsQuantity": 1,
+    "createdAt": "2024-06-05T09:53:53.838Z",
+    "updatedAt": "2024-06-07T16:31:05.393Z",
+    "ratingsAverage": 5,
+    "id": "666035b1a82e00e267170324"
+  },
+  {
+    "_id": "6660336ba82e00e2671702f0",
+    "name": "stones resin",
+    "slug": "stones-resin",
+    "description": "Embracing fluidity, shaping moments with resin.",
+    "quantity": 40,
+    "sold": 0,
+    "price": 228,
+    "priceAfterDiscount": 0,
+    "color": [],
+    "imagecover": "https://res.cloudinary.com/dvtoucizl/image/upload/v1717580649/products/product-2d5d2b4c-5b6e-4fe4-854d-7872490b8ec3-1717580649678-cover.jpeg.jpg",
+    "image": [
+      "https://res.cloudinary.com/dvtoucizl/image/upload/v1717580650/products/product-8a01d6ff-ec6e-49ae-939b-f46eed6013f2-1717580650565-1.jpeg.jpg"
+    ],
+    "category": {
+      "name": "Resin"
+    },
+    "subcategory": [],
+    "brand": "665fa3fd8d20d6779528f9ab",
+    "wishlistflag": false,
+    "ratingsQuantity": 0,
+    "createdAt": "2024-06-05T09:44:11.598Z",
+    "updatedAt": "2024-06-05T09:44:11.598Z",
+    "id": "6660336ba82e00e2671702f0"
+  },
+  {
+    "_id": "666032caa82e00e2671702e4",
+    "name": "Soft green resin",
+    "slug": "soft-green-resin",
+    "description": "Resin: The art of preservation, the beauty of creation.",
+    "quantity": 35,
+    "sold": 0,
+    "price": 219,
+    "priceAfterDiscount": 0,
+    "color": [],
+    "imagecover": "https://res.cloudinary.com/dvtoucizl/image/upload/v1717580488/products/product-d5c7ad72-345f-465c-ae67-a554cc96080d-1717580488465-cover.jpeg.jpg",
+    "image": [
+      "https://res.cloudinary.com/dvtoucizl/image/upload/v1717580489/products/product-1a2e5f17-b770-4d2f-8efc-d2ae5a44f234-1717580489358-1.jpeg.jpg"
+    ],
+    "category": {
+      "name": "Resin"
+    },
+    "subcategory": [],
+    "brand": "665fa3fd8d20d6779528f9ab",
+    "wishlistflag": false,
+    "ratingsQuantity": 0,
+    "createdAt": "2024-06-05T09:41:30.183Z",
+    "updatedAt": "2024-06-05T09:41:30.183Z",
+    "id": "666032caa82e00e2671702e4"
+  },
+  {
+    "_id": "66603279a82e00e2671702d8",
+    "name": "sea resin",
+    "slug": "sea-resin",
+    "description": "Where creativity meets craftsmanship, resin reigns supreme.",
+    "quantity": 28,
+    "sold": 0,
+    "price": 271,
+    "priceAfterDiscount": 0,
+    "color": [],
+    "imagecover": "https://res.cloudinary.com/dvtoucizl/image/upload/v1717580408/products/product-7cf84260-89dc-4402-b6c4-e41a4ece7cb6-1717580407530-cover.jpeg.jpg",
+    "image": [
+      "https://res.cloudinary.com/dvtoucizl/image/upload/v1717580408/products/product-cf892282-3a47-4518-8943-7bd1ba43735b-1717580408542-1.jpeg.jpg"
+    ],
+    "category": {
+      "name": "Resin"
+    },
+    "subcategory": [],
+    "brand": "665fa3fd8d20d6779528f9ab",
+    "wishlistflag": false,
+    "ratingsQuantity": 0,
+    "createdAt": "2024-06-05T09:40:09.593Z",
+    "updatedAt": "2024-06-05T09:40:09.593Z",
+    "id": "66603279a82e00e2671702d8"
+  },
+  {
+    "_id": "66603137a82e00e26717029b",
+    "name": "quarter resin",
+    "slug": "quarter-resin",
+    "description": "Resin: Capturing memories, preserving moments, creating art.",
+    "quantity": 18,
+    "sold": 0,
+    "price": 300,
+    "priceAfterDiscount": 0,
+    "color": [],
+    "imagecover": "https://res.cloudinary.com/dvtoucizl/image/upload/v1717580085/products/product-5bc11192-a094-44fc-960b-d991a56456e4-1717580085293-cover.jpeg.jpg",
+    "image": [
+      "https://res.cloudinary.com/dvtoucizl/image/upload/v1717580086/products/product-776abfeb-a2fb-4b31-8426-d1de31847e06-1717580086208-1.jpeg.jpg"
+    ],
+    "category": {
+      "name": "Resin"
+    },
+    "subcategory": [],
+    "brand": "665fa3fd8d20d6779528f9ab",
+    "wishlistflag": false,
+    "ratingsQuantity": 0,
+    "createdAt": "2024-06-05T09:34:47.135Z",
+    "updatedAt": "2024-06-05T09:34:47.135Z",
+    "id": "66603137a82e00e26717029b"
+  },
+  {
+    "_id": "666030f2a82e00e26717028f",
+    "name": "high quality resin",
+    "slug": "high-quality-resin",
+    "description": "Embracing fluidity, shaping moments with resin.",
+    "quantity": 37,
+    "sold": 0,
+    "price": 230,
+    "priceAfterDiscount": 0,
+    "color": [],
+    "imagecover": "https://res.cloudinary.com/dvtoucizl/image/upload/v1717580016/products/product-ffb5a04d-c0da-49ed-bd18-d910919c0400-1717580016458-cover.jpeg.jpg",
+    "image": [
+      "https://res.cloudinary.com/dvtoucizl/image/upload/v1717580017/products/product-afb134f1-d56c-4829-9c83-e1affd8c16c9-1717580017410-1.jpeg.jpg"
+    ],
+    "category": {
+      "name": "Resin"
+    },
+    "subcategory": [],
+    "brand": "665fa3fd8d20d6779528f9ab",
+    "wishlistflag": false,
+    "ratingsQuantity": 0,
+    "createdAt": "2024-06-05T09:33:38.367Z",
+    "updatedAt": "2024-06-07T16:06:13.803Z",
+    "id": "666030f2a82e00e26717028f"
+  },
+  {
+    "_id": "66602f78a82e00e267170261",
+    "name": "black resin",
+    "slug": "black-resin",
+    "description": "Crafting dreams into reality with the magic of resin",
+    "quantity": 22,
+    "sold": 0,
+    "price": 259,
+    "priceAfterDiscount": 0,
+    "color": [],
+    "imagecover": "https://res.cloudinary.com/dvtoucizl/image/upload/v1717579638/products/product-7b6f9c7a-caf4-4738-b562-6036f38e54d6-1717579638221-cover.jpeg.jpg",
+    "image": [
+      "https://res.cloudinary.com/dvtoucizl/image/upload/v1717579639/products/product-58e753ee-454c-4e16-bf48-153c182f98a2-1717579639214-1.jpeg.jpg"
+    ],
+    "category": {
+      "name": "Resin"
+    },
+    "subcategory": [],
+    "brand": "665fa3fd8d20d6779528f9ab",
+    "wishlistflag": false,
+    "ratingsQuantity": 1,
+    "createdAt": "2024-06-05T09:27:20.284Z",
+    "updatedAt": "2024-06-07T16:12:57.077Z",
+    "ratingsAverage": 2,
+    "id": "66602f78a82e00e267170261"
+  },
+  {
+    "_id": "665fac898d20d6779528fb13",
+    "name": "Heart Leather Bracelet",
+    "slug": "heart-leather-bracelet",
+    "description": "Heart Leather Bracelet Crystals Beaded Bangles Women Handmade Bracelets 1Pc | ",
+    "quantity": 22,
+    "sold": 0,
+    "price": 233,
+    "priceAfterDiscount": 0,
+    "color": [],
+    "imagecover": "https://res.cloudinary.com/dvtoucizl/image/upload/v1717546119/products/product-e8a47b86-02e4-408f-98f5-e73836c9d7b0-1717546118785-cover.jpeg.jpg",
+    "image": [
+      "https://res.cloudinary.com/dvtoucizl/image/upload/v1717546120/products/product-e68cb136-5ddc-42ff-8609-83c49f26da69-1717546119973-1.jpeg.jpg"
+    ],
+    "category": {
+      "name": "Accessories"
+    },
+    "subcategory": [],
+    "brand": "665f64dc34b8c833d473f94f",
+    "wishlistflag": true,
+    "ratingsQuantity": 0,
+    "createdAt": "2024-06-05T00:08:41.215Z",
+    "updatedAt": "2024-06-07T16:11:52.339Z",
+    "id": "665fac898d20d6779528fb13"
+  },
+  {
+    "_id": "665fac268d20d6779528fb07",
+    "name": "Wedding Headpiece",
+    "slug": "wedding-headpiece",
+    "description": "Inestone Wedding Headpiece for Bride",
+    "quantity": 17,
+    "sold": 0,
+    "price": 300,
+    "priceAfterDiscount": 0,
+    "color": [],
+    "imagecover": "https://res.cloudinary.com/dvtoucizl/image/upload/v1717546020/products/product-7c84158f-4e35-4887-95ae-202530844c54-1717546020006-cover.jpeg.jpg",
+    "image": [
+      "https://res.cloudinary.com/dvtoucizl/image/upload/v1717546021/products/product-bfb757e4-076b-4ea1-af2c-e936e5fc0e83-1717546021072-1.jpeg.jpg"
+    ],
+    "category": {
+      "name": "Accessories"
+    },
+    "subcategory": [],
+    "brand": "665f64dc34b8c833d473f94f",
+    "wishlistflag": false,
+    "ratingsQuantity": 0,
+    "createdAt": "2024-06-05T00:07:02.247Z",
+    "updatedAt": "2024-06-05T00:07:02.247Z",
+    "id": "665fac268d20d6779528fb07"
+  },
+  {
+    "_id": "665fabc18d20d6779528faf3",
+    "name": "Beautiful and luxury necklace",
+    "slug": "beautiful-and-luxury-necklace",
+    "description": "Necklace Unique Design Malaysia. Handmade Design",
+    "quantity": 33,
+    "sold": 0,
+    "price": 255,
+    "priceAfterDiscount": 0,
+    "color": [],
+    "imagecover": "https://res.cloudinary.com/dvtoucizl/image/upload/v1717545920/products/product-cca1e9be-9c51-48bb-8fc5-4c56d736da5c-1717545920188-cover.jpeg.jpg",
+    "image": [
+      "https://res.cloudinary.com/dvtoucizl/image/upload/v1717545921/products/product-33a03c36-b4a6-4612-b0ec-763e0c3b95f3-1717545921143-1.jpeg.jpg"
+    ],
+    "category": {
+      "name": "Accessories"
+    },
+    "subcategory": [],
+    "brand": "665f64dc34b8c833d473f94f",
+    "wishlistflag": false,
+    "ratingsQuantity": 0,
+    "createdAt": "2024-06-05T00:05:21.973Z",
+    "updatedAt": "2024-06-05T00:05:21.973Z",
+    "id": "665fabc18d20d6779528faf3"
+  },
+  {
+    "_id": "665fab788d20d6779528fae7",
+    "name": "Handmade phone strap",
+    "slug": "handmade-phone-strap",
+    "description": "Handmade phone strap\tcrystal yellow",
+    "quantity": 23,
+    "sold": 0,
+    "price": 100,
+    "priceAfterDiscount": 0,
+    "color": [],
+    "imagecover": "https://res.cloudinary.com/dvtoucizl/image/upload/v1717545846/products/product-4ad8ee60-b237-4bac-8fcd-87a0695cb8d4-1717545845913-cover.jpeg.jpg",
+    "image": [
+      "https://res.cloudinary.com/dvtoucizl/image/upload/v1717545847/products/product-c4dafdb0-29b7-4246-b818-bd3e4fca25dc-1717545847203-1.jpeg.jpg"
+    ],
+    "category": {
+      "name": "Accessories"
+    },
+    "subcategory": [],
+    "brand": "665f64dc34b8c833d473f94f",
+    "wishlistflag": false,
+    "ratingsQuantity": 1,
+    "createdAt": "2024-06-05T00:04:08.349Z",
+    "updatedAt": "2024-06-07T16:12:14.202Z",
+    "ratingsAverage": 4,
+    "id": "665fab788d20d6779528fae7"
+  },
+  {
+    "_id": "665fab318d20d6779528fadb",
+    "name": "Fabric Earring",
+    "slug": "fabric-earring",
+    "description": "Handmade plated drop earring",
+    "quantity": 28,
+    "sold": 0,
+    "price": 150,
+    "priceAfterDiscount": 0,
+    "color": [],
+    "imagecover": "https://res.cloudinary.com/dvtoucizl/image/upload/v1717545775/products/product-b5a36911-12bf-437f-a8e4-ea6bfeeb0d9b-1717545775027-cover.jpeg.jpg",
+    "image": [
+      "https://res.cloudinary.com/dvtoucizl/image/upload/v1717545776/products/product-fbc5a3eb-e6d5-4678-aa6c-64b5213e6308-1717545776108-1.jpeg.jpg"
+    ],
+    "category": {
+      "name": "Accessories"
+    },
+    "subcategory": [],
+    "brand": "665f64dc34b8c833d473f94f",
+    "wishlistflag": false,
+    "ratingsQuantity": 0,
+    "createdAt": "2024-06-05T00:02:57.387Z",
+    "updatedAt": "2024-06-05T21:07:59.900Z",
+    "id": "665fab318d20d6779528fadb"
+  },
+  {
+    "_id": "665faaf98d20d6779528fab3",
+    "name": "Golden Rings",
+    "slug": "golden-rings",
+    "description": "Golden of ten Rings\t",
+    "quantity": 27,
+    "sold": 1,
+    "price": 213,
+    "priceAfterDiscount": 0,
+    "color": [],
+    "imagecover": "https://res.cloudinary.com/dvtoucizl/image/upload/v1717545720/products/product-5654ff31-5d44-4f5b-88e8-d439acfa4cdf-1717545719667-cover.jpeg.jpg",
+    "image": [
+      "https://res.cloudinary.com/dvtoucizl/image/upload/v1717545720/products/product-9ec0ba32-cad8-4817-ab0c-5680dc29c4fc-1717545720733-1.jpeg.jpg"
+    ],
+    "category": {
+      "name": "Accessories"
+    },
+    "subcategory": [],
+    "brand": "665f64dc34b8c833d473f94f",
+    "wishlistflag": true,
+    "ratingsQuantity": 1,
+    "createdAt": "2024-06-05T00:02:01.970Z",
+    "updatedAt": "2024-06-07T15:10:59.024Z",
+    "ratingsAverage": 4,
+    "id": "665faaf98d20d6779528fab3"
+  },
+  {
+    "_id": "665faabc8d20d6779528fa9f",
+    "name": "Summer necklaces",
+    "slug": "summer-necklaces",
+    "description": "Necklace Unique Design Malaysia. Handmade Design",
+    "quantity": 35,
+    "sold": 0,
+    "price": 251,
+    "priceAfterDiscount": 0,
+    "color": [],
+    "imagecover": "https://res.cloudinary.com/dvtoucizl/image/upload/v1717545657/products/product-ba945426-13f1-4443-89bc-7ea4b43c8f69-1717545657544-cover.jpeg.jpg",
+    "image": [
+      "https://res.cloudinary.com/dvtoucizl/image/upload/v1717545659/products/product-1d98058a-afb5-4c39-9c2b-7fa9c9fdc849-1717545659039-1.jpeg.jpg"
+    ],
+    "category": {
+      "name": "Accessories"
+    },
+    "subcategory": [],
+    "brand": "665f64dc34b8c833d473f94f",
+    "wishlistflag": false,
+    "ratingsQuantity": 0,
+    "createdAt": "2024-06-05T00:01:00.405Z",
+    "updatedAt": "2024-06-05T21:07:55.562Z",
+    "id": "665faabc8d20d6779528fa9f"
+  },
+  {
+    "_id": "665fa9888d20d6779528fa79",
+    "name": "Gray Unique T-shirt",
+    "slug": "gray-unique-t-shirt",
+    "description": "The Heritage Wash gives the shirt a custom, lived–in feel right away",
+    "quantity": 45,
+    "sold": 0,
+    "price": 200,
+    "priceAfterDiscount": 0,
+    "color": [],
+    "imagecover": "https://res.cloudinary.com/dvtoucizl/image/upload/v1717545351/products/product-7fcde1d2-6c4b-4275-a00f-62c184b052ea-1717545350723-cover.jpeg.jpg",
+    "image": [
+      "https://res.cloudinary.com/dvtoucizl/image/upload/v1717545351/products/product-cbdeab46-bb19-4794-8a92-c807d289953a-1717545351664-1.jpeg.jpg"
+    ],
+    "category": {
+      "name": "Shirts"
+    },
+    "subcategory": [],
+    "brand": "665f659434b8c833d473f967",
+    "wishlistflag": false,
+    "ratingsQuantity": 0,
+    "createdAt": "2024-06-04T23:55:52.846Z",
+    "updatedAt": "2024-06-04T23:55:52.846Z",
+    "id": "665fa9888d20d6779528fa79"
+  },
+  {
+    "_id": "665fa8d08d20d6779528fa5a",
+    "name": "Chic rose T-shirt",
+    "slug": "chic-rose-t-shirt",
+    "description": "The smooth cotton fabric and ribbed V–neck make this shirt a comfortable option ",
+    "quantity": 17,
+    "sold": 0,
+    "price": 255,
+    "priceAfterDiscount": 0,
+    "color": [],
+    "imagecover": "https://res.cloudinary.com/dvtoucizl/image/upload/v1717545166/products/product-37458607-3669-4496-9fd1-7f3d14bbf095-1717545166558-cover.jpeg.jpg",
+    "image": [
+      "https://res.cloudinary.com/dvtoucizl/image/upload/v1717545167/products/product-772d9294-3891-417f-9ebb-0324624f1261-1717545167508-1.jpeg.jpg"
+    ],
+    "category": {
+      "name": "Shirts"
+    },
+    "subcategory": [],
+    "brand": "665f659434b8c833d473f967",
+    "wishlistflag": true,
+    "ratingsQuantity": 0,
+    "createdAt": "2024-06-04T23:52:48.438Z",
+    "updatedAt": "2024-11-27T19:38:26.804Z",
+    "id": "665fa8d08d20d6779528fa5a"
+  },
+  {
+    "_id": "665fa8838d20d6779528fa4e",
+    "name": "Daisy's T-shirt",
+    "slug": "daisy's-t-shirt",
+    "description": "Made from 100% cotton, this shirt is machine washable and great for layering or wearing alone.",
+    "quantity": 27,
+    "sold": 0,
+    "price": 214,
+    "priceAfterDiscount": 0,
+    "color": [],
+    "imagecover": "https://res.cloudinary.com/dvtoucizl/image/upload/v1717545090/products/product-b4752c1b-7643-4b15-b40a-34a5028a2d63-1717545089610-cover.jpeg.jpg",
+    "image": [
+      "https://res.cloudinary.com/dvtoucizl/image/upload/v1717545090/products/product-958bbc91-bbad-47b0-8d03-2181f455ffe5-1717545090663-1.jpeg.jpg"
+    ],
+    "category": {
+      "name": "Shirts"
+    },
+    "subcategory": [],
+    "brand": "665f659434b8c833d473f967",
+    "wishlistflag": true,
+    "ratingsQuantity": 0,
+    "createdAt": "2024-06-04T23:51:31.612Z",
+    "updatedAt": "2024-11-27T19:38:24.559Z",
+    "id": "665fa8838d20d6779528fa4e"
+  }
+]

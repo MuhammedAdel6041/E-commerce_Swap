@@ -1,0 +1,10 @@
+:root {
+  --bg-main: #e54666;
+  --text-main: #e54666;
+}
+.bg-main {
+  background-color: var(--bg-main);
+}
+.text-main {
+  color: var(--text-main) !important;
+}
