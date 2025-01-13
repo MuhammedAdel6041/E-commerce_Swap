@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/jsx-key */
+import React, { useEffect, useState } from "react";
 import {
   Layout,
   Row,
@@ -18,10 +19,11 @@ import {
   HeartOutlined,
   EditOutlined,
   RightOutlined,
+  PlusOutlined,
 } from "@ant-design/icons";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+import AddProductModal from "./AddProductModal"; // Import AddProductModal
 
 const { Content } = Layout;
 const { Title, Text } = Typography;
@@ -31,6 +33,7 @@ const ProfilePage = () => {
   const { token } = useToken();
   const [user, setUser] = useState(null); // Store user data
   const [loading, setLoading] = useState(true); // Handle loading state
+  const [isModalVisible, setIsModalVisible] = useState(false); // Handle modal visibility
 
   // Fetch logged-in user data from the API
   useEffect(() => {
@@ -97,6 +100,15 @@ const ProfilePage = () => {
       </div>
     );
   }
+
+  const handleModalClose = () => {
+    setIsModalVisible(false);
+  };
+
+  const handleAddProductSuccess = () => {
+    message.success("Product added successfully!");
+    // Refresh data or perform additional actions as needed
+  };
 
   return (
     <Content className="p-6 bg-gray-100">
@@ -196,7 +208,7 @@ const ProfilePage = () => {
                     style={{ display: "flex", justifyContent: "space-between" }}
                   >
                     <span>My Orders</span>
-                    <Link to={"/me/myorders"}>See All</Link>
+                    <Link to={"/profile/myorders"}>See All</Link>
                   </div>
                 }
                 style={{ marginTop: 16 }}
@@ -259,9 +271,24 @@ const ProfilePage = () => {
                 />
               </Card>
             </Col>
+            <Col xs={24}>
+              <Button
+                type="primary"
+                icon={<PlusOutlined />}
+                block
+                onClick={() => setIsModalVisible(true)}
+              >
+                Add Product
+              </Button>
+            </Col>
           </Row>
         </Col>
       </Row>
+      <AddProductModal
+        visible={isModalVisible}
+        onClose={handleModalClose}
+        onAddSuccess={handleAddProductSuccess}
+      />
     </Content>
   );
 };

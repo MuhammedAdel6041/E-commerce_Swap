@@ -15,14 +15,24 @@ export default function CartContextProvider(props) {
 
     // Add to Cart
     function addToCart(productId) {
-        return axios.post(
-            `https://e-commerce-api-v1-cdk5.onrender.com/api/v1/cart`,
-            { productId: productId },
-            { headers: headers }
-        )
-        .then((response) => response)
-        .catch((error) => error);
+        return axios
+            .post(
+                `https://e-commerce-api-v1-cdk5.onrender.com/api/v1/cart`,
+                { productId: productId },
+                { headers: headers }
+            )
+            .then((response) => {
+                if (response.status === 200 || response.status === 201) {
+                    return response.data; // Return successful response data
+                }
+                throw new Error("Failed to add product to cart");
+            })
+            .catch((error) => {
+                console.error("Add to Cart Error:", error.response || error);
+                throw new Error(error.response?.data?.message || "Add to Cart failed");
+            });
     }
+    
 
     // Display User Cart
     function displayUserCart() {

@@ -3,8 +3,13 @@ import { Formik, Field } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
- 
-import { EyeInvisibleOutlined, EyeTwoTone, FacebookOutlined, GoogleOutlined } from "@ant-design/icons";
+
+import {
+  EyeInvisibleOutlined,
+  EyeTwoTone,
+  FacebookOutlined,
+  GoogleOutlined,
+} from "@ant-design/icons";
 import { useAuth } from "../../../context/AuthContext";
 
 const Login = () => {
@@ -54,13 +59,12 @@ const Login = () => {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-center min-h-screen bg-gradient-to-b from-gray-900 via-gray-900 to-purple-800">
+    <div className="flex flex-col lg:flex-row items-center justify-center min-h-screen bg-gradient-to-br from-[#E93D82] via-[#be185d] to-[#E93D82]">
       {/* Left Section */}
-      <div className="lg:w-1/2 flex flex-col items-start justify-center px-12 text-gray-300 text-center lg:text-left">
+      <div className="lg:w-1/2 flex flex-col items-start justify-center px-12 text-white text-center lg:text-left">
         <h1 className="text-5xl font-bold mb-4">Welcome back</h1>
         <p className="text-lg">
-          Lorem ipsum is placeholder text commonly used in the graphic, print,
-          and publishing industries for previewing layouts and visual mockups.
+          Log in to your account to continue exploring amazing products and services.
         </p>
       </div>
 
@@ -71,7 +75,7 @@ const Login = () => {
         </h2>
         <p className="text-center text-gray-500 mb-4">
           Don&apos;t have an account?{" "}
-          <Link to="/register" className="text-purple-600 hover:underline">
+          <Link to="/register" className="text-[#E93D82] hover:underline">
             Sign Up
           </Link>
         </p>
@@ -81,7 +85,11 @@ const Login = () => {
           onSubmit={handleSubmit}
         >
           {({ handleSubmit, isSubmitting, errors, touched }) => (
-            <Form onFinish={handleSubmit} layout="vertical" className="space-y-4">
+            <Form
+              onFinish={handleSubmit}
+              layout="vertical"
+              className="space-y-4"
+            >
               <Form.Item
                 label="Email"
                 validateStatus={touched.email && errors.email ? "error" : ""}
@@ -97,7 +105,9 @@ const Login = () => {
               </Form.Item>
               <Form.Item
                 label="Password"
-                validateStatus={touched.password && errors.password ? "error" : ""}
+                validateStatus={
+                  touched.password && errors.password ? "error" : ""
+                }
                 help={touched.password && errors.password ? errors.password : ""}
               >
                 <Field
@@ -107,22 +117,25 @@ const Login = () => {
                   className="w-full"
                   iconRender={(visible) =>
                     visible ? (
-                      <EyeTwoTone className="text-purple-600" />
+                      <EyeTwoTone className="text-[#E93D82]" />
                     ) : (
-                      <EyeInvisibleOutlined className="text-purple-600" />
+                      <EyeInvisibleOutlined className="text-[#E93D82]" />
                     )
                   }
                 />
               </Form.Item>
               <div className="flex justify-end text-sm">
-                <a href="/forgot-password" className="text-purple-600 hover:underline">
+                <a
+                  href="/forgot-password"
+                  className="text-[#E93D82] hover:underline"
+                >
                   Forgot your password?
                 </a>
               </div>
               <Button
                 type="primary"
                 htmlType="submit"
-                className="w-full bg-purple-600 hover:bg-purple-700 text-white py-2 rounded-lg"
+                className="w-full bg-[#E93D82] hover:bg-[#be185d] text-white py-2 rounded-lg"
                 loading={isSubmitting}
               >
                 Sign In
@@ -151,7 +164,7 @@ const Login = () => {
         </div>
         <p className="text-center text-gray-500 text-xs mt-6">
           Copyright © 2021-2023{" "}
-          <a href="/" className="text-purple-600 hover:underline">
+          <a href="/" className="text-[#E93D82] hover:underline">
             AJI
           </a>
         </p>

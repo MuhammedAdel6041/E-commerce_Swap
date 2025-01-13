@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { UploadOutlined } from "@ant-design/icons";
 import { Button, Col, Row, Upload } from "antd";
 import { useState } from "react";

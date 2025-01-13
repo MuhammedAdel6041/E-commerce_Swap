@@ -21,8 +21,10 @@ export default function Navbar() {
 
   const items = [
     { label: "Home", key: "/" },
+    { label: "product", key: "/product" },
     { label: "Category", key: "/category" },
-    { label: "Marketplace", key: "/marketplace" },
+    { label: "brand", key: "/brand" },
+    { label: "Marketplace", key: "/market" },
     { label: "About", key: "/about" },
     { label: "ContactUs", key: "/contactus" },
   ];

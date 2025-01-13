@@ -1,13 +1,13 @@
- 
 import logo from "../../assets/images/Base-long-Logo.png";
 
 export default function Footer() {
   return (
-    <footer className="bg-white antialiased dark:bg-gray-600">
+    <footer className="bg-white text-gray-800">
       <div className="mx-auto max-w-screen-xl px-4 2xl:px-0">
-        <div className="border-b border-gray-100 py-6 dark:border-gray-700 md:py-8 lg:py-16">
-          <div className="flex flex-wrap gap-6 md:gap-8 lg:gap-24">
-            <div className="grid min-w-0 flex-1 grid-cols-2 gap-6 md:gap-8 xl:grid-cols-3">
+        <div className="border-b border-gray-200 py-10">
+          <div className="flex flex-wrap gap-10 justify-between">
+            {/* Links Section */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full lg:w-auto">
               {[
                 {
                   title: "Company",
@@ -35,7 +35,7 @@ export default function Footer() {
                 },
               ].map((section, idx) => (
                 <div key={idx}>
-                  <h6 className="mb-4 text-sm font-semibold uppercase text-gray-900 dark:text-white">
+                  <h6 className="mb-4 text-lg font-bold text-gray-900">
                     {section.title}
                   </h6>
                   <ul className="space-y-3">
@@ -43,7 +43,7 @@ export default function Footer() {
                       <li key={linkIdx}>
                         <a
                           href="#"
-                          className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+                          className="text-gray-600 hover:text-gray-900 transition-colors"
                         >
                           {link}
                         </a>
@@ -53,89 +53,90 @@ export default function Footer() {
                 </div>
               ))}
             </div>
-            <div className="mt-6 w-full md:mt-8 lg:mt-0 lg:max-w-lg">
-              <div className="space-y-5 rounded-lg bg-gray-50 p-6 dark:bg-gray-700">
-                
-                <hr className="border-gray-200 dark:border-gray-600" />
-                <form>
-                  <div className="flex items-end space-x-3">
-                    <div className="relative w-full">
-                      <label
-                        htmlFor="email"
-                        className="mb-2 block text-sm font-medium text-gray-900 dark:text-gray-300"
-                      >
-                        Get the latest deals and more.
-                      </label>
-                      <input
-                        type="email"
-                        id="email"
-                        placeholder="Enter your email address"
-                        required
-                        className="block w-full rounded-lg border border-gray-300 bg-white p-3 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500 dark:border-gray-500 dark:bg-gray-600 dark:text-white"
-                      />
-                    </div>
-                    <button
-                      type="submit"
-                      className="rounded-lg bg-primary-700 px-5 py-3 text-sm font-medium text-white hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
-                    >
-                      Subscribe
-                    </button>
-                  </div>
+
+            {/* Newsletter Section */}
+            <div className="flex-1 max-w-lg">
+              <div className="bg-gray-100 p-6 rounded-lg shadow-md">
+                <h6 className="text-lg font-bold text-gray-900 mb-4">
+                  Stay Updated
+                </h6>
+                <p className="text-sm text-gray-600 mb-6">
+                  Subscribe to our newsletter and get the latest deals and updates.
+                </p>
+                <form className="flex items-center space-x-4">
+                  <input
+                    type="email"
+                    placeholder="Enter your email"
+                    className="flex-1 rounded-lg border border-gray-300 bg-white p-3 text-sm focus:outline-none focus:ring-2 focus:ring-gray-500 text-gray-800"
+                  />
+                  <button
+                    type="submit"
+                    className="rounded-lg bg-gray-800 text-white px-5 py-3 text-sm font-medium hover:bg-gray-700 transition-colors"
+                  >
+                    Subscribe
+                  </button>
                 </form>
-                <hr className="border-gray-200 dark:border-gray-600" />
-                <p className="text-sm font-medium text-gray-900 dark:text-white">
-                  Trade on the go with{" "}
-                  <a href="#" className="underline hover:no-underline">
-                    Flowbite App
-                  </a>
+              </div>
+
+              {/* App Links */}
+              <div className="mt-6 flex flex-col space-y-4">
+                <p className="text-sm text-gray-600">
+                  Trade on the go with our mobile app:
                 </p>
                 <div className="flex gap-4">
                   <a
                     href="#"
-                    className="inline-flex items-center justify-center rounded-lg bg-gray-800 px-4 py-2.5 text-white hover:bg-gray-700 focus:ring-4 focus:ring-gray-300 dark:bg-gray-600"
+                    className="inline-flex items-center justify-center bg-gray-800 text-white px-4 py-2.5 rounded-lg hover:bg-gray-700"
                   >
-                    <span>Google Play</span>
+                    Google Play
                   </a>
                   <a
                     href="#"
-                    className="inline-flex items-center justify-center rounded-lg bg-gray-800 px-4 py-2.5 text-white hover:bg-gray-700 focus:ring-4 focus:ring-gray-300 dark:bg-gray-600"
+                    className="inline-flex items-center justify-center bg-gray-800 text-white px-4 py-2.5 rounded-lg hover:bg-gray-700"
                   >
-                    <span>App Store</span>
+                    App Store
                   </a>
                 </div>
-                <div className="flex space-x-4">
-                  {["facebook", "twitter", "instagram", "github"].map((icon, idx) => (
-                    <a
-                      key={idx}
-                      href="#"
-                      className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
-                    >
-                      <span className="sr-only">{icon}</span>
-                    </a>
-                  ))}
-                </div>
+              </div>
+
+              {/* Social Media Icons */}
+              <div className="mt-6 flex gap-4">
+                {["facebook", "twitter", "instagram", "github"].map((icon, idx) => (
+                  <a
+                    key={idx}
+                    href="#"
+                    className="text-gray-600 hover:text-gray-900 transition-colors"
+                  >
+                    <span className="sr-only">{icon}</span>
+                  </a>
+                ))}
               </div>
             </div>
           </div>
         </div>
-        <div className="py-6 md:py-8">
-          <div className="flex flex-col items-center gap-4 text-sm text-gray-900 dark:text-white lg:flex-row lg:justify-between">
+
+        {/* Footer Bottom */}
+        <div className="py-6 text-center border-t border-gray-200">
+          <div className="flex flex-col lg:flex-row justify-between items-center">
             <a href="#">
-              <img src={logo} alt="Company Logo" className="h-8" />
+              <img src={logo} alt="Company Logo" className="h-10" />
             </a>
-            <ul className="flex flex-wrap justify-center gap-4">
+            <ul className="flex flex-wrap justify-center gap-4 text-sm mt-4 lg:mt-0">
               {["Legal Notice", "Terms of Use"].map((item, idx) => (
                 <li key={idx}>
-                  <a href="#" className="font-medium hover:underline">
+                  <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">
                     {item}
                   </a>
                 </li>
               ))}
             </ul>
-            <p>© 2024 Your Company, Inc. All rights reserved.</p>
+            <p className="mt-4 lg:mt-0 text-gray-600 text-sm">
+              © 2024 Your Company, Inc. All rights reserved.
+            </p>
           </div>
         </div>
       </div>
     </footer>
   );
 }
+

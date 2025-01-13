@@ -1,3 +1,7 @@
+ 
+
+ 
+
 import axios from "axios";
 import { useContext, useState } from "react";
 import { useQuery } from "react-query";
@@ -7,7 +11,8 @@ import { toast } from "react-toastify";
 import { Link } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 
-export default function ProductSPage() {
+
+export default function MarketPlace() {
   const { addToCart } = useContext(CartContext);
   const { auth } = useAuth(); // Get authentication state
 
@@ -58,7 +63,7 @@ export default function ProductSPage() {
 
   return (
     <div className="px-4 md:px-8 lg:px-12">
-      <h1 className="text-center text-2xl font-bold mb-6">Products</h1>
+      <h1 className="text-center text-2xl font-bold mb-6">Market Place </h1>
       <Row gutter={[16, 16]} justify="center" className="my-8">
         {filteredProducts?.map((product) => (
           <Col key={product._id} xs={24} sm={12} md={8} lg={6}>
@@ -94,7 +99,7 @@ export default function ProductSPage() {
                 </div>
                 <div className="flex flex-col gap-2">
                   <Link
-                    to={`/product/${product._id}`}
+                    to={`/m/${product._id}`}
                     className="w-full flex items-center justify-center bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg hover:bg-gray-800 transition"
                   >
                     Show Details
@@ -121,6 +126,8 @@ export default function ProductSPage() {
           </Col>
         ))}
       </Row>
+
+
     </div>
   );
 }

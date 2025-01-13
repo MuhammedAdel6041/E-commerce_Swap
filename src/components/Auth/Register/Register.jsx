@@ -51,24 +51,23 @@ const Signup = () => {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-center min-h-screen bg-gradient-to-b from-gray-900 via-gray-900 to-purple-800">
+    <div className="flex flex-col lg:flex-row items-center justify-center min-h-screen bg-gradient-to-b from-subMain via-main to-main shadow-lg">
       {/* Left Section */}
-      <div className="lg:w-1/2 flex flex-col items-start justify-center px-12 text-gray-300 text-center lg:text-left">
+      <div className="lg:w-1/2 flex flex-col items-start justify-center px-12 text-white text-center lg:text-left">
         <h1 className="text-5xl font-bold mb-4">Create an Account</h1>
         <p className="text-lg">
-          Lorem ipsum is placeholder text commonly used in the graphic, print,
-          and publishing industries for previewing layouts and visual mockups.
+          Start your journey with our e-commerce platform by creating an account today.
         </p>
       </div>
 
       {/* Right Section */}
       <div className="lg:w-1/3 bg-white rounded-3xl shadow-xl p-8 mx-4">
-        <h2 className="text-2xl font-bold text-gray-800 text-center mb-6">
+        <h2 className="text-2xl font-bold text-main text-center mb-6">
           Sign Up
         </h2>
         <p className="text-center text-gray-500 mb-4">
           Already have an account?{" "}
-          <Link to="/login" className="text-purple-600 hover:underline">
+          <Link to="/login" className="text-main hover:underline">
             Login
           </Link>
         </p>
@@ -143,7 +142,7 @@ const Signup = () => {
               <Button
                 type="primary"
                 htmlType="submit"
-                className="w-full bg-purple-600 hover:bg-purple-700 text-white py-2 rounded-lg"
+                className="w-full bg-main hover:bg-subMain text-white py-2 rounded-lg"
                 loading={isSubmitting}
               >
                 Create Account

@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import {
   Layout,
   Row,
@@ -12,7 +13,7 @@ import {
   Typography,
   theme,
 } from "antd";
-import { HeartOutlined, BulbOutlined } from "@ant-design/icons";
+import {  BulbOutlined } from "@ant-design/icons";
 // import { useState } from "react";
 import UploadImages from "./UploadImages";
 

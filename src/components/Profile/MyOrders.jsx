@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { Card, Avatar, Typography, Button, List } from "antd";
 import { RightOutlined } from "@ant-design/icons";
 import { Helmet } from "react-helmet";

@@ -1,3 +1,6 @@
+ 
+
+
 import axios from "axios";
 import { useContext, useState } from "react";
 import { useQuery } from "react-query";
@@ -7,7 +10,7 @@ import { toast } from "react-toastify";
 import { Link } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 
-export default function ProductSPage() {
+export default function Products() {
   const { addToCart } = useContext(CartContext);
   const { auth } = useAuth(); // Get authentication state
 
@@ -40,7 +43,7 @@ export default function ProductSPage() {
 
   function GetFeaturedProducts() {
     return axios.get(
-      `https://e-commerce-api-v1-cdk5.onrender.com/api/v1/products/?page=1&limit=315`
+      `https://e-commerce-api-v1-cdk5.onrender.com/api/v1/products/`
     );
   }
 
