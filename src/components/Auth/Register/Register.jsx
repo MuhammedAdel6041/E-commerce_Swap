@@ -3,6 +3,7 @@ import { Formik, Field } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
+import back from "../../../assets/images/back.jpg"; // Import your background image
 
 const Signup = () => {
   const navigate = useNavigate();
@@ -51,7 +52,14 @@ const Signup = () => {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-center min-h-screen bg-gradient-to-b from-subMain via-main to-main shadow-lg">
+    <div
+      className="flex flex-col lg:flex-row items-center justify-center min-h-screen"
+      style={{
+        backgroundImage: `url(${back})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
       {/* Left Section */}
       <div className="lg:w-1/2 flex flex-col items-start justify-center px-12 text-white text-center lg:text-left">
         <h1 className="text-5xl font-bold mb-4">Create an Account</h1>
@@ -61,10 +69,8 @@ const Signup = () => {
       </div>
 
       {/* Right Section */}
-      <div className="lg:w-1/3 bg-white rounded-3xl shadow-xl p-8 mx-4">
-        <h2 className="text-2xl font-bold text-main text-center mb-6">
-          Sign Up
-        </h2>
+      <div className="lg:w-1/3 bg-white rounded-3xl shadow-xl p-8 mx-4 opacity-90">
+        <h2 className="text-2xl font-bold text-main text-center mb-6">Sign Up</h2>
         <p className="text-center text-gray-500 mb-4">
           Already have an account?{" "}
           <Link to="/login" className="text-main hover:underline">

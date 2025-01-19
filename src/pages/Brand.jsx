@@ -66,17 +66,15 @@ export default function BrandPage() {
             <Card
               hoverable
               className="rounded-lg shadow-md overflow-hidden"
-              cover={
-                <div className="h-48 bg-gray-200 flex items-center justify-center">
-                  <img
-                    alt={brand.name || "Brand"}
-                    src={brand.image || "https://via.placeholder.com/150"}
-                    className="h-36 object-contain"
-                  />
-                </div>
-              }
             >
-              <div className="text-center">
+              <div className="w-full h-48">
+                <img
+                  alt={brand.name || "Brand"}
+                  src={brand.image || "https://via.placeholder.com/150"}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="text-center mt-4">
                 <Text strong className="text-lg">
                   {brand.name || "Unknown Brand"}
                 </Text>

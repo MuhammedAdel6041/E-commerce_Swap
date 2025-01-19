@@ -4,11 +4,11 @@ import SearchBox from "./SearchBox";
 import { Button, Col, Menu, Row, Drawer, Dropdown, message } from "antd";
 import {
   MenuOutlined,
-  MoonOutlined,
   ShoppingCartOutlined,
   UserOutlined,
   SettingOutlined,
   LogoutOutlined,
+  HeartOutlined,
 } from "@ant-design/icons";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
@@ -21,9 +21,9 @@ export default function Navbar() {
 
   const items = [
     { label: "Home", key: "/" },
-    { label: "product", key: "/product" },
+    { label: "Product", key: "/product" },
     { label: "Category", key: "/category" },
-    { label: "brand", key: "/brand" },
+    { label: "Brand", key: "/brand" },
     { label: "Marketplace", key: "/market" },
     { label: "About", key: "/about" },
     { label: "ContactUs", key: "/contactus" },
@@ -46,6 +46,7 @@ export default function Navbar() {
     navigate("/login"); // Redirect to login after logout
     message.success("Logged out successfully!");
   };
+
   const profileMenu = (
     <Menu>
       <Menu.Item key="profile" icon={<UserOutlined />}>
@@ -53,6 +54,9 @@ export default function Navbar() {
       </Menu.Item>
       <Menu.Item key="settings" icon={<SettingOutlined />}>
         <Link to="/settings">Settings</Link>
+      </Menu.Item>
+      <Menu.Item key="register" icon={<UserOutlined />}>
+        <Link to="/register">Register</Link> {/* Added Register option */}
       </Menu.Item>
       <Menu.Divider />
       <Menu.Item key="logout" icon={<LogoutOutlined />} onClick={handleLogout}>
@@ -68,6 +72,11 @@ export default function Navbar() {
     } else {
       navigate("/cart"); // Allow access to cart if authenticated
     }
+  };
+
+  // New handleHeartClick function for navigating to the WhisList page
+  const handleHeartClick = () => {
+    navigate("/whishlist"); // Navigate to the WhisList page
   };
 
   return (
@@ -98,7 +107,10 @@ export default function Navbar() {
 
         {/* Right - Icons and Profile/Login */}
         <Col xs={6} sm={4} md={3} className="flex items-center justify-end space-x-4">
-          <MoonOutlined className="text-gray-500 text-lg hidden sm:block" />
+          <HeartOutlined
+            className="text-gray-500 text-lg hidden sm:block cursor-pointer"
+            onClick={handleHeartClick} // Call handleHeartClick on heart icon click
+          />
           <ShoppingCartOutlined
             className="text-gray-500 text-lg hidden sm:block hover:text-black duration-300"
             onClick={handleCartClick}

@@ -2,7 +2,7 @@ import logo from "../../assets/images/Base-long-Logo.png";
 
 export default function Footer() {
   return (
-    <footer className="bg-white text-gray-800">
+    <footer className="bg-white text-gray-800 " >
       <div className="mx-auto max-w-screen-xl px-4 2xl:px-0">
         <div className="border-b border-gray-200 py-10">
           <div className="flex flex-wrap gap-10 justify-between">

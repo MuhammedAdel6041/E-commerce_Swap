@@ -3,7 +3,7 @@ import { Formik, Field } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
-
+import back from "../../../assets/images/back.jpg"; // Import your background image
 import {
   EyeInvisibleOutlined,
   EyeTwoTone,
@@ -59,7 +59,11 @@ const Login = () => {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-center min-h-screen bg-gradient-to-br from-[#E93D82] via-[#be185d] to-[#E93D82]">
+    <div className="flex flex-col lg:flex-row items-center justify-center min-h-screen  " style={{
+            backgroundImage: `url(${back})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}>
       {/* Left Section */}
       <div className="lg:w-1/2 flex flex-col items-start justify-center px-12 text-white text-center lg:text-left">
         <h1 className="text-5xl font-bold mb-4">Welcome back</h1>

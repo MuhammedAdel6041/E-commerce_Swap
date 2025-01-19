@@ -15,6 +15,7 @@ import CategoryPage from "../pages/CategoryPage";
 import Brand from "../pages/Brand";
 import MarketPlace from './../pages/MarketPlace';
 import ProductDetailsPage from "../components/MarketPlace/ProductDetailsPage";
+import WhisList from "../pages/WhisList";
  
  
 
@@ -33,8 +34,9 @@ const routes = createBrowserRouter([
       { path: "login", element: <Login /> },
       { path: "about", element: <AboutUs /> },
       { path: "ContactUs", element: <Contact /> },
+      { path: "whishlist", element: <WhisList /> },
       { path: "register", element: <Register /> },
-      { path: "m/:id", element: <ProductDetailsPage /> },
+      { path: "swap/:id", element: <ProductDetailsPage /> },
       { path: "profile/myorders", element: <MyOrders /> },
       { path: "profile", element: <ProfilePage /> },
       { path: "product/:id", element: <ProductDetailes /> },
