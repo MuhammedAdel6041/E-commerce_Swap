@@ -5,13 +5,14 @@ import axios from "axios";
 import { useQuery } from "react-query";
 import { Button, Tag, Spin, message } from "antd";
 import { CartContext } from "../context/CartContext";
-import { WhisListContext } from "../context/WhisListContext"; 
+import { WishlistContext } from "../context/WhisListContext"; // Correct context name
 import { HeartOutlined, ShoppingCartOutlined } from "@ant-design/icons";
+import Reviews from "../components/Reviews";
 
 const ProductDetails = () => {
   const { id } = useParams();
   const { addToCart } = useContext(CartContext);
-  const { addToWishlist } = useContext(WhisListContext);
+  const { addToWishlist } = useContext(WishlistContext); // Correct hook usage
   const [loading, setLoading] = useState(false);
   const [loadingWishlist, setLoadingWishlist] = useState(false);  // State for wishlist loading
 
@@ -54,7 +55,6 @@ const ProductDetails = () => {
   const { data: reviewsData, isLoading: isReviewsLoading } = useQuery(
     ["getProductReviews", id],
     fetchReviews,
-    { cacheTime: 0 }
   );
 
   const product = productData?.data?.data || {
@@ -143,39 +143,8 @@ const ProductDetails = () => {
         </div>
 
         <div className="mt-10">
-          <ul className="mt-6">
-            {reviewData.map((review) => (
-              <li key={review.id} className="py-8 text-left border px-4 m-2 rounded-lg bg-white shadow-sm">
-                <div className="flex items-start">
-                  <img
-                    className="block h-10 w-10 max-w-full flex-shrink-0 rounded-full"
-                    src={review.avatar || "https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw3fHxwZW9wbGV8ZW58MHwwfHx8MTcxMTExMTM4N3ww&ixlib=rb-4.0.3&q=80&w=1080"}
-                    alt={review.author || "User"}
-                  />
-                  <div className="ml-6">
-                    <div className="flex items-center">
-                      {[...Array(5)].map((_, index) => (
-                        <svg
-                          key={index}
-                          className={`block h-6 w-6 ${index < review.rating ? "text-yellow-500" : "text-gray-400"}`}
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.54-1.118l1.07-3.292a1 1 0 00-.364-1.118l-2.8-2.034c-.783-.57-.38-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z" />
-                        </svg>
-                      ))}
-                    </div>
-                    <p className="mt-2 text-gray-500 text-sm">{review.comment}</p>
-                    <div className="mt-4 flex items-center justify-between">
-                      <span className="text-gray-600 font-semibold">{review.author}</span>
-                      <span className="text-xs text-gray-400">{review.date}</span>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            ))}
-          </ul>
+          <h2 className="text-2xl font-semibold mb-4">Reviews</h2>
+          <Reviews />
         </div>
       </div>
     </div>

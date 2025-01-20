@@ -1,15 +1,19 @@
-import {
-  Typography,
-  Col,
-  Row,
-  Breadcrumb,
- 
-} from 'antd';
+import   { useState, useEffect } from 'react';
+import { Col, Row, Breadcrumb, Spin } from 'antd';
 import CartProduct from '../components/CartProduct/CartProduct';
- 
 
 export default function Cart() {
-  const { Title, Text } = Typography;
+  const [loading, setLoading] = useState(true);
+
+  // Simulate data fetching
+  useEffect(() => {
+    // Simulate an API call or data fetch with a delay
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000); // Adjust time as needed
+
+    return () => clearTimeout(timer); // Cleanup on component unmount
+  }, []);
 
   return (
     <Row className="p-4">
@@ -25,25 +29,21 @@ export default function Cart() {
         </Breadcrumb>
       </Col>
 
-      {/* Main Content: Cart Items + Order Summary */}
+      {/* Main Content */}
       <Col span={24}>
-        <Row gutter={[16, 16]}>
-          {/* Cart Items Section */}
-          <Col xs={24} md={24} className="p-4">
-            <Title level={4}>
-              Cart <Text className="text-lg" type="secondary">(3 items)</Text>
-            </Title>
-            <Row gutter={[16, 16]}>
-              <Col span={24}>
-                <CartProduct />
-               
-              </Col>
-            </Row>
-          </Col>
-
-          {/* Order Summary Section */}
-         
-        </Row>
+        <Spin spinning={loading} size='large'  >
+          <Row gutter={[16, 16]}>
+            {/* Cart Items Section */}
+            <Col xs={24} md={24} className="p-4">
+              <Row>
+                <Col span={24}>
+                  {!loading && <CartProduct />}
+                </Col>
+              </Row>
+            </Col>
+            {/* Additional sections like Order Summary can be added here */}
+          </Row>
+        </Spin>
       </Col>
     </Row>
   );

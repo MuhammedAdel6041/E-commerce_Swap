@@ -1,296 +1,263 @@
-import { Button, Col, Row, Typography, Modal, Dropdown, Space, Tag } from 'antd';
-import { useState } from 'react';
+import { Button, Col, Row, Typography, Modal, message, Spin, Card, Space } from 'antd';
+import { useState, useEffect, useContext } from 'react';
+import { ExclamationCircleOutlined, DeleteOutlined, EnvironmentOutlined, PhoneOutlined } from '@ant-design/icons';
 import NewAddress from './NewAddress';
-import { MoreOutlined, ThunderboltOutlined } from '@ant-design/icons';
-import { TbIrregularPolyhedron } from "react-icons/tb";
-import Payment from './Payment/Payment';
- 
+import { useAuth } from '../../context/AuthContext';
+import { useQuery, useMutation, useQueryClient } from 'react-query';
+import axios from 'axios';
+import { CartContext } from '../../context/CartContext'; // Import CartContext
+import { useNavigate } from 'react-router-dom';
+
 export default function Address() {
     const { Title, Text } = Typography;
+    const navigate = useNavigate(); // Initialize useNavigate
+    const { confirm } = Modal;
+    const { auth } = useAuth();
+    const queryClient = useQueryClient();
+    const { displayUserCart } = useContext(CartContext);
 
-    const [isModal1Open, setIsModal1Open] = useState(false); // State for Modal 1
-    const [isModal2Open, setIsModal2Open] = useState(false); // State for Modal 2 (passed to NewAddress)
+    const [isModal2Open, setIsModal2Open] = useState(false);
+    const [selectedAddress, setSelectedAddress] = useState(null);
 
-    const handleModal1Ok = () => {
-        setIsModal1Open(false);
-    };
+    const productId = "64beba5738189e96e6b9e726"; // Hardcoded productId
 
-    const handleModal1Cancel = () => {
-        setIsModal1Open(false);
-    };
+    // Fetch user addresses
+    const { data, isLoading, isError } = useQuery(
+        'userAddresses',
+        async () => {
+            const response = await axios.post(
+                'https://e-commerce-api-v1-cdk5.onrender.com/api/v1/address/',
+                { productId },
+                { headers: { Authorization: `Bearer ${auth.token}` } }
+            );
+            return response.data;
+        },
+        { enabled: !!auth.token }
+    );
 
-    const menuItems = [
-        {
-            key: '1',
-            label: 'Edit',
+    // Fetch cart items
+    useEffect(() => {
+        const fetchCartItems = async () => {
+            try {
+                const cartItems = await displayUserCart();
+                console.log("Cart Items:", cartItems?.data?.data?._id);
+            } catch (error) {
+                console.error("Failed to fetch cart items:", error);
+            }
+        };
+
+        fetchCartItems();
+    }, [displayUserCart]);
+
+    // Add new address mutation
+    const addAddressMutation = useMutation(
+        async (newAddress) => {
+            await axios.post(
+                'https://e-commerce-api-v1-cdk5.onrender.com/api/v1/address/',
+                { ...newAddress, productId },
+                { headers: { Authorization: `Bearer ${auth.token}` } }
+            );
         },
         {
-            key: '2',
-            label: 'Delete',
+            onSuccess: () => {
+                message.success('Address added successfully');
+                queryClient.invalidateQueries('userAddresses');
+                setIsModal2Open(false);
+            },
+            onError: () => {
+                message.error('Failed to add address');
+            },
+        }
+    );
+
+    // Delete address mutation
+    const deleteAddressMutation = useMutation(
+        async (addressId) => {
+            await axios.delete(
+                `https://e-commerce-api-v1-cdk5.onrender.com/api/v1/address/${addressId}`,
+                {
+                    headers: { Authorization: `Bearer ${auth.token}` },
+                    data: { productId },
+                }
+            );
         },
-    ];
+        {
+            onSuccess: () => {
+                message.success('Address deleted successfully');
+                queryClient.invalidateQueries('userAddresses');
+            },
+            onError: () => {
+                message.error('Failed to delete address');
+            },
+        }
+    );
+
+    // Create order mutation
+    const createOrderMutation = useMutation(
+        async ({ cartId, address }) => {
+            await axios.post(
+                `https://e-commerce-api-v1-cdk5.onrender.com/api/v1/orders/${cartId}`, // Cart ID in the URL
+                {
+                    shippingAddress: {
+                        details: address.alias,
+                        phone: address.phone,
+                        city: address.city,
+                        postalCode: address.postalCode || '', // Default postal code if not provided
+                    },
+                },
+                { headers: { Authorization: `Bearer ${auth.token}` } }
+            );
+        },
+        {
+            onSuccess: () => {
+                message.success('Order created successfully');
+                navigate('/profile/myorders'); // Navigate to the orders page
+            },
+            onError: () => {
+                message.error('Failed to create order');
+            },
+        }
+    );
+
+    const handleCreateOrder = async () => {
+        if (!selectedAddress) {
+            message.error('Please select an address first');
+            return;
+        }
+
+        try {
+            const cartItems = await displayUserCart();
+            const cartId = cartItems?.data?.data?._id;
+            if (!cartId) {
+                message.error('No cart found');
+                return;
+            }
+
+            createOrderMutation.mutate({ cartId, address: selectedAddress });
+        } catch (error) {
+            console.error('Failed to fetch cart or create order:', error);
+        }
+    };
+
+    const handleDelete = (addressId) => {
+        confirm({
+            title: 'Are you sure you want to delete this address?',
+            icon: <ExclamationCircleOutlined />,
+            okText: 'Yes',
+            okType: 'danger',
+            cancelText: 'No',
+            onOk: () => deleteAddressMutation.mutate(addressId),
+        });
+    };
+
+    const handleAddNewAddress = (addressData) => {
+        addAddressMutation.mutate(addressData);
+    };
+
+    const handleAddressSelect = (address) => {
+        setSelectedAddress(address);
+    };
+
+    const addresses = Array.isArray(data?.data)
+        ? data.data.filter((address) => address.alias && address.phone && address.city)
+        : [];
+
+    if (isLoading) {
+        return (
+            <div className="flex justify-center items-center h-screen">
+                <Spin size="large" />
+            </div>
+        );
+    }
+
+    if (isError) {
+        return <Text type="danger">Failed to load addresses. Please try again later.</Text>;
+    }
 
     return (
         <>
-            {/* First  Section */}
-            <Row className="p-5 m-4 border rounded-lg ">
+            <Row className="p-5 m-4 border rounded-lg">
                 <Col xs={24} md={24} className="p-4 flex justify-between">
                     <Title level={4}>Shipping Address</Title>
-                    <Button type="primary" style={{ backgroundColor: '#E93D82', borderColor: '#E93D82', color: '#fff' }} onClick={() => setIsModal1Open(true)}>
-                        Shipping Addresses
+                    <Button
+                        type="primary"
+                        style={{ backgroundColor: '#E93D82', borderColor: '#E93D82', color: '#fff' }}
+                        onClick={() => setIsModal2Open(true)}
+                    >
+                        Add New Address
                     </Button>
                 </Col>
                 <Col xs={24} md={24} className="p-4">
                     <Row gutter={[16, 16]}>
-                        <Col span={24}>
-                            <Col xs={24} md={24} className="p-3  w-full border rounded-lg relative">
-
-                                <Row justify="space-between" align="middle">
-                                    <Col>
-                                        <Title level={5} className="m-0">
-                                            Home
-                                        </Title>
-                                    </Col>
-
-                                </Row>
-                                <Row>
-                                    <Col span={24}>
-                                        <Text className="text-gray-600">
-                                            10 Al-Ahram Street, Dokki, Giza. Ground Floor, Unit 3.
-                                        </Text>
-                                    </Col>
-                                </Row>
-
-                            </Col>
-                        </Col>
-                        <Col span={24}>
-                            <Col xs={24} md={24} className="p-3 w-full border rounded-lg relative">
-
-                                <Row justify="space-between" align="middle">
-                                    <Col>
-                                        <Title level={5} className="m-0">
-                                            Office
-                                        </Title>
-                                    </Col>
-
-                                </Row>
-                                <Row>
-                                    <Col span={24}>
-                                        <Text className="text-gray-600">
-                                            10 Al-Ahram Street, Dokki, Giza. Ground Floor, Unit 3.
-                                        </Text>
-                                    </Col>
-                                </Row>
-
-                            </Col>
-                        </Col>
+                        {addresses.length > 0 ? (
+                            addresses.map((address) => (
+                                <Col xs={24} sm={12} lg={8} key={address._id}>
+                                    <Card
+                                        hoverable
+                                        bordered={false}
+                                        className={`shadow-sm rounded-lg ${selectedAddress?._id === address._id ? 'border border-blue-500' : ''}`}
+                                        style={{ background: '#f9f9f9', padding: '20px', borderRadius: '8px' }}
+                                        onClick={() => handleAddressSelect(address)}
+                                    >
+                                        <Space direction="vertical" style={{ width: '100%' }}>
+                                            <div className="flex justify-between">
+                                                <Title level={5} style={{ marginBottom: 0 }}>
+                                                    {address.alias}
+                                                </Title>
+                                            </div>
+                                            <Space direction="vertical" size="small">
+                                                <Text>
+                                                    <EnvironmentOutlined style={{ marginRight: '8px', color: '#1890ff' }} />
+                                                    {address.city}
+                                                </Text>
+                                                <Text>
+                                                    <PhoneOutlined style={{ marginRight: '8px', color: '#52c41a' }} />
+                                                    {address.phone}
+                                                </Text>
+                                            </Space>
+                                            <Button
+                                                danger
+                                                type="text"
+                                                icon={<DeleteOutlined />}
+                                                onClick={(e) => {
+                                                    e.stopPropagation();
+                                                    handleDelete(address._id);
+                                                }}
+                                            >
+                                                Delete
+                                            </Button>
+                                        </Space>
+                                    </Card>
+                                </Col>
+                            ))
+                        ) : (
+                            <Text type="secondary">No addresses found. Add a new address.</Text>
+                        )}
                     </Row>
                 </Col>
-
             </Row>
-            {/* Second Section */}
-            <Row className="p-5 m-4 border rounded-lg bg-white ">
-                {/* Header Section */}
-                <Col xs={24} className="p-4 flex justify-between items-center">
-                    {/* Left Section */}
-                    <Space className="flex items-center">
-                        <Title level={4} className="m-0 text-black">
-                            Shipment 1 of 2
-                        </Title>
-                        <Text type="secondary">(4 items)</Text>
-                    </Space>
 
-                    {/* Right Section */}
-                    <Space className="flex items-center">
-                        <Tag color="cyan" className="flex items-center">
-                            <ThunderboltOutlined style={{ marginRight: 4 }} /> Fast Shipping
-                        </Tag>
-                        <Text type="secondary">Get it by 11 sep</Text>
-                    </Space>
-                </Col>
+            <NewAddress
+                isOpen={isModal2Open}
+                onClose={() => setIsModal2Open(false)}
+                onSave={handleAddNewAddress}
+            />
 
-                {/* Product Cards Section */}
-                <Col xs={24} className="flex gap-4 ">
-                    {/* Product Card 1 */}
-                    <Col className="border rounded-lg p-4 flex gap-4 items-start w-full" xs={24} md={12}>
-                        <img
-                            src="https://via.placeholder.com/100"
-                            alt="Product"
-                            className="rounded-md"
-                            style={{ width: 100, height: 100 }}
-                        />
-                        <div>
-                            <Title level={5} className="m-0">iPhone 15 Pro Max 512GB Natural</Title>
-                            <Text className="block">Blue Titanium | 512GB | Middle Eastern Version</Text>
-                            <Text className="block">x 2</Text>
-                        </div>
-                    </Col>
-
-                    {/* Product Card 2 */}
-                    <Col className="border rounded-lg p-4   flex gap-4 items-start w-full" xs={24} md={12}>
-                        <img
-                            src="https://via.placeholder.com/100"
-                            alt="Product"
-                            className="rounded-md"
-                            style={{ width: 100, height: 100 }}
-                        />
-                        <div>
-                            <Title level={5} className="m-0">iPhone 15 Pro Max 512GB Natural</Title>
-                            <Text className="block">Blue Titanium | 512GB | Middle Eastern Version</Text>
-                            <Text className="block">x 2</Text>
-                        </div>
-                    </Col>
-                </Col>
-            </Row>
-            {/* three Section */}
-            <Row className="p-5 m-4 border rounded-lg bg-white">
-                {/* Header Section */}
-                <Col xs={24} className="p-4 flex justify-between items-center">
-                    {/* Left Section */}
-                    <Space className="flex items-center">
-                        <Title level={4} className="m-0 text-black">
-                            Shipment 2 of 2
-                        </Title>
-                        <Text type="secondary">(4 items)</Text>
-                    </Space>
-
-                    {/* Right Section */}
-                    <Space className="flex items-center">
-                        <Tag className="flex items-center">
-                            <TbIrregularPolyhedron className='me-2' />
-                            Regular Shipping
-                        </Tag>
-                        <Text type="secondary">Get it by 11 sep</Text>
-                    </Space>
-                </Col>
-
-                {/* Product Cards Section */}
-                <Col xs={24} className="w-full">
-                    {/* Product Card 1 */}
-                    <Col className=" w-full border rounded-lg p-4 flex gap-4 items-start" xs={24}>
-                        <img
-                            src="https://via.placeholder.com/100"
-                            alt="Product"
-                            className="rounded-md"
-                            style={{ width: 100, height: 100 }}
-                        />
-                        <div>
-                            <Title level={5} className="m-0">iPhone 15 Pro Max 512GB Natural</Title>
-                            <Text className="block">Blue Titanium | 512GB | Middle Eastern Version</Text>
-                            <Text className="block">x 2</Text>
-                        </div>
-                    </Col>
-                </Col>
-            </Row>
-            {/* Four  Section */}
-            <Row className="p-5 m-4 border rounded-lg ">
-                <Col xs={24} md={24} className="p-4 flex justify-between">
-                    <Title level={4}>Payment</Title>
-
-                </Col>
-
-                <Payment/>
-            </Row>
-            {/* Shipping Addresses Modal No.1 */}
-            <Modal
-                title="Shipping Addresses"
-                open={isModal1Open}
-                onOk={handleModal1Ok}
-                onCancel={handleModal1Cancel}
-                okText="Save"
-                okButtonProps={{
-                    style: {
-                        backgroundColor: '#E93D82',
-                        borderColor: '#E93D82',
-                        color: '#fff', // White text
-                    },
-                }}
-            >
-                <Row>
-                    <Col xs={24} md={24} className="my-2">
-                        <Button
-                            size="large"
-                            type="primary"
-                            onClick={() => setIsModal2Open(true)} // Open Modal 2
-                            className="w-full"
-                            style={{ backgroundColor: '#E93D82', borderColor: '#E93D82', color: '#fff' }}
-                        >
-                            Add New
-                        </Button>
-                    </Col>
-                    <Col xs={24} md={24} className="p-4 m-2 w-full border rounded-lg relative">
-
-                        <Row justify="space-between" align="middle">
-                            <Col>
-                                <Title level={5} className="m-0">
-                                    Office
-                                </Title>
-                            </Col>
-                            <Col>
-                                <Dropdown
-                                    menu={{
-                                        items: menuItems,
-                                    }}
-                                    trigger={['click']}
-                                    placement="bottomRight"
-                                >
-                                    <Button
-                                        type="text"
-                                        icon={<MoreOutlined />}
-                                        className="hover:bg-gray-100"
-                                    />
-                                </Dropdown>
-                            </Col>
-                        </Row>
-                        <Row>
-                            <Col span={24}>
-                                <Text className="text-gray-600">
-                                    10 Al-Ahram Street, Dokki, Giza. Ground Floor, Unit 3.
-                                </Text>
-                            </Col>
-                        </Row>
-
-                    </Col>
-
-                    <Col xs={24} md={24} className="p-4 m-2 w-full border rounded-lg relative">
-
-                        <Row justify="space-between" align="middle">
-                            <Col>
-                                <Title level={5} className="m-0">
-                                    Office
-                                </Title>
-                            </Col>
-                            <Col>
-                                <Dropdown
-                                    menu={{
-                                        items: menuItems,
-                                    }}
-                                    trigger={['click']}
-                                    placement="bottomRight"
-                                >
-                                    <Button
-                                        type="text"
-                                        icon={<MoreOutlined />}
-                                        className="hover:bg-gray-100"
-                                    />
-                                </Dropdown>
-                            </Col>
-                        </Row>
-                        <Row>
-                            <Col span={24}>
-                                <Text className="text-gray-600">
-                                    10 Al-Ahram Street, Dokki, Giza. Ground Floor, Unit 3.
-                                </Text>
-                            </Col>
-                        </Row>
-
-                    </Col>
-
-                </Row>
-            </Modal>
-
-            {/* Modal 2 (New Address Component) */}
-            <NewAddress isOpen={isModal2Open} onClose={() => setIsModal2Open(false)} />
+            {selectedAddress && (
+                <div className="p-5">
+                    <Title level={5}>Selected Address:</Title>
+                    <Text>{selectedAddress.alias}</Text>
+                    <Text>{selectedAddress.city}</Text>
+                    <Text>{selectedAddress.phone}</Text>
+                    <Button
+                        type="primary"
+                        onClick={handleCreateOrder}
+                        style={{ backgroundColor: '#E93D82', borderColor: '#E93D82', color: '#fff', marginTop: '10px' }}
+                    >
+                        Create Order
+                    </Button>
+                </div>
+            )}
         </>
     );
 }

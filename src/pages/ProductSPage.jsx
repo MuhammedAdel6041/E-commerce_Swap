@@ -26,7 +26,7 @@ export default function ProductSPage() {
 
   function GetFeaturedProducts() {
     return axios.get(
-      `https://e-commerce-api-v1-cdk5.onrender.com/api/v1/products/?page=1&limit=315`
+      `https://e-commerce-api-v1-cdk5.onrender.com/api/v1/products`
     );
   }
 

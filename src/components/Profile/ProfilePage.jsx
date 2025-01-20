@@ -20,10 +20,16 @@ import {
   EditOutlined,
   RightOutlined,
   PlusOutlined,
+  MailOutlined,
+  PhoneOutlined,
+  CalendarOutlined,
+  EnvironmentOutlined,
 } from "@ant-design/icons";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import AddProductModal from "./AddProductModal"; // Import AddProductModal
+import Address from "../Address/Address";
+import MyOrders from './MyOrders';
 
 const { Content } = Layout;
 const { Title, Text } = Typography;
@@ -44,7 +50,7 @@ const ProfilePage = () => {
           {
             method: "GET",
             headers: {
-              Authorization: `Bearer ${localStorage.getItem("token")}`,
+              Authorization: `Bearer ${localStorage.getItem("authToken")}`,
             },
           }
         );
@@ -117,29 +123,74 @@ const ProfilePage = () => {
       </Helmet>
       <Row gutter={[16, 16]}>
         <Col xs={24} md={8}>
-          <Card className="bg-white text-black" align="center">
-            <Avatar size={200} src="https://placehold.co/200x200" />
-            <div className="flex flex-col items-center gap-3">
-              <Title level={4} style={{ margin: 0 }}>
+          <Card
+            className="bg-gradient-to-br from-blue-500 to-purple-600 text-white shadow-lg"
+            align="center"
+            style={{
+              borderRadius: "15px",
+              overflow: "hidden",
+              padding: "20px",
+              position: "sticky",
+              top: "20px", // Distance from the top of the viewport
+              zIndex: 10, // Ensures the card appears above other elements if necessary
+            }}
+          >
+            <Avatar
+              size={200}
+              src="https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw3fHxwZW9wbGV8ZW58MHwwfHx8MTcxMTExMTM4N3ww&ixlib=rb-4.0.3&q=80&w=1080"
+              style={{
+                border: "5px solid white",
+                boxShadow: "0px 4px 8px rgba(0,0,0,0.2)",
+              }}
+            />
+            <div className="flex flex-col items-center gap-3 mt-4">
+              <Title
+                className="capitalize"
+                level={4}
+                style={{ margin: 0, color: "white" }}
+              >
                 {user?.name || "User Name"}
               </Title>
-              <Text type="secondary">{user?.email || "Email"}</Text>
-              <Text type="secondary">{user?.phone || "Phone number"}</Text>
-              <Text type="secondary">
-                {user?.createdAt
-                  ? `Joined ${new Date(user.createdAt).toLocaleDateString()}`
-                  : "Joined date"}
+              <Text type="secondary" style={{ color: "#e4e4e4" }}>
+                <span
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "5px",
+                  }}
+                >
+                  <MailOutlined /> {user?.email || "Email"}
+                </span>
+              </Text>
+              <Text type="secondary" style={{ color: "#e4e4e4" }}>
+                <span
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "5px",
+                  }}
+                >
+                  <PhoneOutlined /> {user?.phone || "Phone number"}
+                </span>
+              </Text>
+              <Text type="secondary" style={{ color: "#e4e4e4" }}>
+                <span
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "5px",
+                  }}
+                >
+                  <CalendarOutlined />{" "}
+                  {user?.createdAt
+                    ? `Joined ${new Date(user.createdAt).toLocaleDateString()}`
+                    : "Joined date"}
+                </span>
               </Text>
             </div>
-            <Button
-              type="link"
-              icon={<EditOutlined />}
-              style={{ padding: 0, marginTop: token.padding }}
-            >
-              Edit Details
-            </Button>
           </Card>
         </Col>
+
         <Col xs={24} md={16}>
           <Row gutter={[16, 16]}>
             <Col xs={24}>
@@ -211,75 +262,13 @@ const ProfilePage = () => {
                     <Link to={"/profile/myorders"}>See All</Link>
                   </div>
                 }
-                style={{ marginTop: 16 }}
+                
               >
-                <List
-                  itemLayout="horizontal"
-                  dataSource={orderItems}
-                  renderItem={(item, index) => (
-                    <List.Item>
-                      <List.Item.Meta
-                        avatar={
-                          <Avatar
-                            shape="square"
-                            size={64}
-                            src="https://placehold.co/64x64"
-                          />
-                        }
-                        title={item.title}
-                        description={
-                          <div>
-                            <Text>{item.description}</Text>
-                            <Text>x{item.quantity}</Text>
-                          </div>
-                        }
-                      />
-                      <div style={{ textAlign: "right" }}>
-                        <Text type="success">Delivered</Text>
-                        <Button type="link" icon={<RightOutlined />}>
-                          Order details
-                        </Button>
-                      </div>
-                    </List.Item>
-                  )}
-                />
+                <MyOrders/>
               </Card>
             </Col>
             <Col xs={24}>
-              <Card
-                title={
-                  <div
-                    style={{ display: "flex", justifyContent: "space-between" }}
-                  >
-                    <span>Addresses</span>
-                    <Button type="link">Manage</Button>
-                  </div>
-                }
-                style={{ marginTop: 16 }}
-              >
-                <List
-                  itemLayout="horizontal"
-                  dataSource={addresses}
-                  renderItem={(item) => (
-                    <List.Item>
-                      <List.Item.Meta
-                        title={item.type}
-                        description={item.address}
-                      />
-                    </List.Item>
-                  )}
-                />
-              </Card>
-            </Col>
-            <Col xs={24}>
-              <Button
-                type="primary"
-                icon={<PlusOutlined />}
-                block
-                onClick={() => setIsModalVisible(true)}
-              >
-                Add Product
-              </Button>
+         <Address/>
             </Col>
           </Row>
         </Col>

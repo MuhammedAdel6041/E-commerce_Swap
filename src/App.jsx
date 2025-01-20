@@ -9,11 +9,12 @@ function App() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <WhisListContextProvider> <CartContextProvider>
-         <RouterProvider router={routes} />
-       </CartContextProvider></WhisListContextProvider>
-      
-     
+      <WhisListContextProvider>
+        
+        <CartContextProvider>
+          <RouterProvider router={routes} />
+        </CartContextProvider>
+      </WhisListContextProvider>
     </QueryClientProvider>
   );
 }

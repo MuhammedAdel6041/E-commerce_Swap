@@ -5,10 +5,10 @@ import { Button, Col, Menu, Row, Drawer, Dropdown, message } from "antd";
 import {
   MenuOutlined,
   ShoppingCartOutlined,
-  UserOutlined,
-  SettingOutlined,
   LogoutOutlined,
   HeartOutlined,
+  KeyOutlined,
+  SettingOutlined,
 } from "@ant-design/icons";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
@@ -49,17 +49,22 @@ export default function Navbar() {
 
   const profileMenu = (
     <Menu>
-      <Menu.Item key="profile" icon={<UserOutlined />}>
+      <Menu.Item key="profile" icon={<img src="https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw3fHxwZW9wbGV8ZW58MHwwfHx8MTcxMTExMTM4N3ww&ixlib=rb-4.0.3&q=80&w=1080" alt="Profile" style={{ width: 20, height: 20, borderRadius: "50%" }} />} >
         <Link to="/profile">Profile</Link>
       </Menu.Item>
-      <Menu.Item key="settings" icon={<SettingOutlined />}>
+      <Menu.Item key="settings" icon={<SettingOutlined />} >
         <Link to="/settings">Settings</Link>
       </Menu.Item>
-      <Menu.Item key="register" icon={<UserOutlined />}>
-        <Link to="/register">Register</Link> {/* Added Register option */}
+      <Menu.Item key="register" icon={<KeyOutlined />} >
+        <Link to="/register">Register</Link>
       </Menu.Item>
       <Menu.Divider />
-      <Menu.Item key="logout" icon={<LogoutOutlined />} onClick={handleLogout}>
+      <Menu.Item
+        key="logout"
+        icon={<LogoutOutlined />}
+        onClick={handleLogout}
+        style={{ color: "red" }} // Change logout text color to red
+      >
         Logout
       </Menu.Item>
     </Menu>
@@ -117,7 +122,11 @@ export default function Navbar() {
           />
           {auth?.isAuthenticated ? (
             <Dropdown overlay={profileMenu} placement="bottomRight" arrow>
-              <Button type="text" icon={<UserOutlined />} className="text-lg" />
+              <img
+                src="https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw3fHxwZW9wbGV8ZW58MHwwfHx8MTcxMTExMTM4N3ww&ixlib=rb-4.0.3&q=80&w=1080"
+                alt="Profile"
+                style={{ width: 30, height: 30, borderRadius: "50%", cursor: "pointer" }} // Profile icon image
+              />
             </Dropdown>
           ) : (
             <NavLink to="/login" className="text-red-600 text-sm hidden sm:block">

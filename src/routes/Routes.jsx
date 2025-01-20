@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
 
-import { Cart, CheckOut,  Home, NotFound } from "./routes_Component.routes";
+import { Cart, Category, CheckOut,  Home, NotFound } from "./routes_Component.routes";
 import Login from "../components/Auth/Login/Login";
 import Register from "../components/Auth/Register/Register";
 import AboutUs from "../pages/AboutUs";
@@ -39,6 +39,7 @@ const routes = createBrowserRouter([
       { path: "swap/:id", element: <ProductDetailsPage /> },
       { path: "profile/myorders", element: <MyOrders /> },
       { path: "profile", element: <ProfilePage /> },
+      { path: "x", element: <Category /> },
       { path: "product/:id", element: <ProductDetailes /> },
       { path: "*", element: <NotFound /> },
     ],
